@@ -15,7 +15,9 @@ public class Vehiculo {
 
     private Persona dueño;
 
-    public Vehiculo(int id_vehiculo, Date anho_fabricacion, int numero_asientos, String placa, Tipo_Uso tipo_uso, Modelo modelo, Persona dueño) {
+    private boolean activo;
+
+    public Vehiculo(int id_vehiculo, Date anho_fabricacion, int numero_asientos, String placa, Tipo_Uso tipo_uso, Modelo modelo, Persona dueño, boolean activo) {
         this.id_vehiculo = id_vehiculo;
         this.anho_fabricacion = anho_fabricacion;
         this.numero_asientos = numero_asientos;
@@ -23,6 +25,15 @@ public class Vehiculo {
         this.tipo_uso = tipo_uso;
         this.modelo = modelo;
         this.dueño = dueño;
+        this.activo = activo;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
 
     public int getId_vehiculo() {

@@ -3,7 +3,20 @@ package com.pucp.unionseguros.model.Personas;
 public class TipoDocumento {
     private int id_tipo_documento;
     private String nombre_documento;
+    private boolean activo;
 
+    public TipoDocumento(int id_tipo_documento, String nombre_documento, boolean activo) {
+        this.id_tipo_documento = id_tipo_documento;
+        this.nombre_documento = nombre_documento;
+        this.activo = activo;
+    }
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
+    }
     public int getId_tipo_documento() {
         return id_tipo_documento;
     }

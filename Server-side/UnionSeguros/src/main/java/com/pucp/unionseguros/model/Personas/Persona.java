@@ -9,17 +9,27 @@ public class Persona {
     private String apellido_materno;
     private Date fecha_nacimiento;
     private String telefono;
+    private boolean activo;
 
-    public Persona(int id_persona, String nombres, String apellido_paterno, String apellido_materno, Date fecha_nacimiento, String telefono, TipoDocumento tipo_documento, String numero_documento, String direccion) {
+    public Persona(int id_persona, String nombres, String apellido_paterno, String apellido_materno, Date fecha_nacimiento, String telefono, boolean activo, TipoDocumento tipo_documento, String numero_documento, String direccion) {
         this.id_persona = id_persona;
         this.nombres = nombres;
         this.apellido_paterno = apellido_paterno;
         this.apellido_materno = apellido_materno;
         this.fecha_nacimiento = fecha_nacimiento;
         this.telefono = telefono;
+        this.activo = activo;
         this.tipo_documento = tipo_documento;
         this.numero_documento = numero_documento;
         this.direccion = direccion;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
 
     private TipoDocumento tipo_documento;

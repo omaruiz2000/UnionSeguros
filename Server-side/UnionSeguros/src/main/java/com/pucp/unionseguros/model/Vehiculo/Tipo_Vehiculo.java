@@ -4,9 +4,12 @@ public class Tipo_Vehiculo {
     private int id_tipo_vehiculo;
     private String nombre_tipo_vehiculo;
 
-    public Tipo_Vehiculo(int id_tipo_vehiculo, String nombre_tipo_vehiculo) {
+    private boolean activo;
+
+    public Tipo_Vehiculo(int id_tipo_vehiculo, String nombre_tipo_vehiculo, boolean activo) {
         this.id_tipo_vehiculo = id_tipo_vehiculo;
         this.nombre_tipo_vehiculo = nombre_tipo_vehiculo;
+        this.activo = activo;
     }
 
     public int getId_tipo_vehiculo() {
@@ -23,5 +26,13 @@ public class Tipo_Vehiculo {
 
     public void setNombre_tipo_vehiculo(String nombre_tipo_vehiculo) {
         this.nombre_tipo_vehiculo = nombre_tipo_vehiculo;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
 }

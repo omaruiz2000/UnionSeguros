@@ -16,7 +16,21 @@ public class Cotizacion {
     private Vehiculo vehiculo;
     private Distrito distrito;
 
+    private boolean activo;
+
+
     private ArrayList<DetalleCotizacion> listaBeneficios;
+
+    public Cotizacion(int id_cotizacion, Date fecha_cotizacion, double monto_estimado, Cliente cliente, Vehiculo vehiculo, Distrito distrito, boolean activo, ArrayList<DetalleCotizacion> listaBeneficios) {
+        this.id_cotizacion = id_cotizacion;
+        this.fecha_cotizacion = fecha_cotizacion;
+        this.monto_estimado = monto_estimado;
+        this.cliente = cliente;
+        this.vehiculo = vehiculo;
+        this.distrito = distrito;
+        this.activo = activo;
+        this.listaBeneficios = listaBeneficios;
+    }
 
     public int getId_cotizacion() {
         return id_cotizacion;
@@ -74,13 +88,11 @@ public class Cotizacion {
         this.listaBeneficios = listaBeneficios;
     }
 
-    public Cotizacion(int id_cotizacion, Date fecha_cotizacion, double monto_estimado, Cliente cliente, Vehiculo vehiculo, Distrito distrito, ArrayList<DetalleCotizacion> listaBeneficios) {
-        this.id_cotizacion = id_cotizacion;
-        this.fecha_cotizacion = fecha_cotizacion;
-        this.monto_estimado = monto_estimado;
-        this.cliente = cliente;
-        this.vehiculo = vehiculo;
-        this.distrito = distrito;
-        this.listaBeneficios = listaBeneficios;
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
 }

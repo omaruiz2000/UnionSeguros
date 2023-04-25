@@ -4,12 +4,15 @@ public class Tipo_Uso {
     private int id_tipo_uso;
     private String nombre_tipo_uso;
 
-    public Tipo_Uso(int id_tipo_uso, String nombre_tipo_uso) {
+    private boolean activo;
+
+    public Tipo_Uso(int id_tipo_uso, String nombre_tipo_uso, boolean activo) {
         this.id_tipo_uso = id_tipo_uso;
         this.nombre_tipo_uso = nombre_tipo_uso;
+        this.activo = activo;
     }
 
-    public int getId_tispo_uso() {
+    public int getId_tipo_uso() {
         return id_tipo_uso;
     }
 
@@ -24,4 +27,13 @@ public class Tipo_Uso {
     public void setNombre_tipo_uso(String nombre_tipo_uso) {
         this.nombre_tipo_uso = nombre_tipo_uso;
     }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
+    }
 }
+
