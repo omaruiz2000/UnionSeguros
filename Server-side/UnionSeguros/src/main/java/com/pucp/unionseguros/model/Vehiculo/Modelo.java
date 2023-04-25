@@ -1,17 +1,33 @@
 package com.pucp.unionseguros.model.Vehiculo;
 
-public class Modelo extends Marca_Vehiculo{
+public class Modelo {
     private int id_modelo;
     private String modelo;
 
-    public Modelo(int id_tipo_vehiculo, String nombre_tipo_vehiculo, int id_marca_vehiculo, String nombre_marca) {
-        super(id_tipo_vehiculo, nombre_tipo_vehiculo, id_marca_vehiculo, nombre_marca);
-    }
+    private Marca_Vehiculo marca_vehiculo;
+    private Tipo_Vehiculo tipo_vehiculo;
 
-    public Modelo(int id_tipo_vehiculo, String nombre_tipo_vehiculo, int id_marca_vehiculo, String nombre_marca, int id_modelo, String modelo) {
-        super(id_tipo_vehiculo, nombre_tipo_vehiculo, id_marca_vehiculo, nombre_marca);
+    public Modelo(int id_modelo, String modelo, Marca_Vehiculo marca_vehiculo, Tipo_Vehiculo tipo_vehiculo) {
         this.id_modelo = id_modelo;
         this.modelo = modelo;
+        this.marca_vehiculo = marca_vehiculo;
+        this.tipo_vehiculo = tipo_vehiculo;
+    }
+
+    public Marca_Vehiculo getMarca_vehiculo() {
+        return marca_vehiculo;
+    }
+
+    public void setMarca_vehiculo(Marca_Vehiculo marca_vehiculo) {
+        this.marca_vehiculo = marca_vehiculo;
+    }
+
+    public Tipo_Vehiculo getTipo_vehiculo() {
+        return tipo_vehiculo;
+    }
+
+    public void setTipo_vehiculo(Tipo_Vehiculo tipo_vehiculo) {
+        this.tipo_vehiculo = tipo_vehiculo;
     }
 
     public int getId_modelo() {
