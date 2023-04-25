@@ -11,11 +11,14 @@ public class BoletaDeVenta extends SOAT{
     private Date fecha_emision;
     private double monto;
 
-    public BoletaDeVenta(int id_poliza, double precio_base, Date fecha_vigencia_desde, Date fecha_vigencia_fin, Vehiculo vehiculo, Distrito distrito, Cliente cliente, Cobertura cobertura, MetodoDePago metodoDePago, int id_soat, Date fecha_de_emision, double monto_prima, int id_boleta, Date fecha_emision, double monto) {
-        super(id_poliza, precio_base, fecha_vigencia_desde, fecha_vigencia_fin, vehiculo, distrito, cliente, cobertura, metodoDePago, id_soat, fecha_de_emision, monto_prima);
+    private boolean activo;
+
+    public BoletaDeVenta(int id_poliza, double precio_base, Date fecha_vigencia_desde, Date fecha_vigencia_fin, Vehiculo vehiculo, Distrito distrito, Cliente cliente, Cobertura cobertura, MetodoDePago metodoDePago, boolean activo, int id_soat, Date fecha_de_emision, double monto_prima, boolean activo1, int id_boleta, Date fecha_emision, double monto, boolean activo2) {
+        super(id_poliza, precio_base, fecha_vigencia_desde, fecha_vigencia_fin, vehiculo, distrito, cliente, cobertura, metodoDePago, activo, id_soat, fecha_de_emision, monto_prima, activo1);
         this.id_boleta = id_boleta;
         this.fecha_emision = fecha_emision;
         this.monto = monto;
+        this.activo = activo2;
     }
 
     public int getId_boleta() {
@@ -40,5 +43,15 @@ public class BoletaDeVenta extends SOAT{
 
     public void setMonto(double monto) {
         this.monto = monto;
+    }
+
+    @Override
+    public boolean isActivo() {
+        return activo;
+    }
+
+    @Override
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
 }

@@ -5,10 +5,12 @@ public class DetalleCotizacion {
     private String beneficio;
     private double monto_adicional;
 
-    public DetalleCotizacion(int id_detalle_cotizacion, String beneficio, double monto_adicional) {
+    private boolean activo;
+    public DetalleCotizacion(int id_detalle_cotizacion, String beneficio, double monto_adicional, boolean activo) {
         this.id_detalle_cotizacion = id_detalle_cotizacion;
         this.beneficio = beneficio;
         this.monto_adicional = monto_adicional;
+        this.activo = activo;
     }
 
     public int getId_detalle_cotizacion() {
@@ -33,5 +35,13 @@ public class DetalleCotizacion {
 
     public void setMonto_adicional(double monto_adicional) {
         this.monto_adicional = monto_adicional;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
 }

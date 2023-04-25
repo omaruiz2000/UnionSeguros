@@ -7,13 +7,23 @@ public class Roles {
     private String descripcion;
     private String nombre_rol;
 
+    private boolean activo;
     private ArrayList<Permisos> lista_permisos;
 
-    public Roles(int id_rol, String descripcion, String nombre_rol, ArrayList<Permisos> lista_permisos) {
+    public Roles(int id_rol, String descripcion, String nombre_rol, boolean activo, ArrayList<Permisos> lista_permisos) {
         this.id_rol = id_rol;
         this.descripcion = descripcion;
         this.nombre_rol = nombre_rol;
+        this.activo = activo;
         this.lista_permisos = lista_permisos;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
 
     public int getId_rol() {

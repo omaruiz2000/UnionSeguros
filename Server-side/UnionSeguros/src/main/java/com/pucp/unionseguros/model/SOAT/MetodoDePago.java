@@ -9,12 +9,15 @@ public class MetodoDePago {
     private String cvv;
     private Date fecha_vencimiento;
 
-    public MetodoDePago(int id_metodo_pago, String nombre_metodo, String numero_tarjeta, String cvv, Date fecha_vencimiento) {
+    private boolean activo;
+
+    public MetodoDePago(int id_metodo_pago, String nombre_metodo, String numero_tarjeta, String cvv, Date fecha_vencimiento, boolean activo) {
         this.id_metodo_pago = id_metodo_pago;
         this.nombre_metodo = nombre_metodo;
         this.numero_tarjeta = numero_tarjeta;
         this.cvv = cvv;
         this.fecha_vencimiento = fecha_vencimiento;
+        this.activo = activo;
     }
 
     public int getId_metodo_pago() {
@@ -55,5 +58,13 @@ public class MetodoDePago {
 
     public void setFecha_vencimiento(Date fecha_vencimiento) {
         this.fecha_vencimiento = fecha_vencimiento;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
 }

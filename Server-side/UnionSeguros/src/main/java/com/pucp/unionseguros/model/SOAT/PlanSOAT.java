@@ -4,11 +4,13 @@ public class PlanSOAT {
     private int id_plan_soat;
     private double cobertura;
     private double precio;
+    private boolean activo;
 
-    public PlanSOAT(int id_plan_soat, double cobertura, double precio) {
+    public PlanSOAT(int id_plan_soat, double cobertura, double precio, boolean activo) {
         this.id_plan_soat = id_plan_soat;
         this.cobertura = cobertura;
         this.precio = precio;
+        this.activo = activo;
     }
 
     public int getId_plan_soat() {
@@ -33,5 +35,13 @@ public class PlanSOAT {
 
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
 }

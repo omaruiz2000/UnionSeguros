@@ -17,7 +17,9 @@ public class Poliza {
     private Cobertura cobertura;
     private MetodoDePago metodoDePago;
 
-    public Poliza(int id_poliza, double precio_base, Date fecha_vigencia_desde, Date fecha_vigencia_fin, Vehiculo vehiculo, Distrito distrito, Cliente cliente, Cobertura cobertura, MetodoDePago metodoDePago) {
+    private boolean activo;
+
+    public Poliza(int id_poliza, double precio_base, Date fecha_vigencia_desde, Date fecha_vigencia_fin, Vehiculo vehiculo, Distrito distrito, Cliente cliente, Cobertura cobertura, MetodoDePago metodoDePago, boolean activo) {
         this.id_poliza = id_poliza;
         this.precio_base = precio_base;
         this.fecha_vigencia_desde = fecha_vigencia_desde;
@@ -27,6 +29,7 @@ public class Poliza {
         this.cliente = cliente;
         this.cobertura = cobertura;
         this.metodoDePago = metodoDePago;
+        this.activo = activo;
     }
 
     public int getId_poliza() {
@@ -99,5 +102,13 @@ public class Poliza {
 
     public void setMetodoDePago(MetodoDePago metodoDePago) {
         this.metodoDePago = metodoDePago;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
 }

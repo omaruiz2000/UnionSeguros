@@ -7,11 +7,22 @@ public class Modelo {
     private Marca_Vehiculo marca_vehiculo;
     private Tipo_Vehiculo tipo_vehiculo;
 
-    public Modelo(int id_modelo, String modelo, Marca_Vehiculo marca_vehiculo, Tipo_Vehiculo tipo_vehiculo) {
+    private boolean activo;
+
+    public Modelo(int id_modelo, String modelo, Marca_Vehiculo marca_vehiculo, Tipo_Vehiculo tipo_vehiculo, boolean activo) {
         this.id_modelo = id_modelo;
         this.modelo = modelo;
         this.marca_vehiculo = marca_vehiculo;
         this.tipo_vehiculo = tipo_vehiculo;
+        this.activo = activo;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
 
     public Marca_Vehiculo getMarca_vehiculo() {
