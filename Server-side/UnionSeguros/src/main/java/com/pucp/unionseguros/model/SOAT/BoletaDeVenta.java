@@ -3,55 +3,35 @@ package com.pucp.unionseguros.model.SOAT;
 import com.pucp.unionseguros.model.Distritos.Distrito;
 import com.pucp.unionseguros.model.Personas.Cliente;
 import com.pucp.unionseguros.model.Vehiculo.Vehiculo;
+import jakarta.persistence.*;
+import lombok.*;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Date;
+@Entity
+@Table(name = "boleta_de_venta")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+public class BoletaDeVenta{
 
-public class BoletaDeVenta extends SOAT{
-    private int id_boleta;
-    private Date fecha_emision;
-    private double monto;
+    @Id
+    @Column(name = "id_boleta", nullable = false)
+    private Integer id;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "fid_soat")
+    private SOAT fidSoat;
+
+    @Column(name = "fecha_emision")
+    private LocalDate fechaEmision;
+
+    @Column(name = "monto", precision = 10, scale = 2)
+    private BigDecimal monto;
+
+    @Column(name = "activo")
     private boolean activo;
 
-    public BoletaDeVenta(int id_poliza, double precio_base, Date fecha_vigencia_desde, Date fecha_vigencia_fin, Vehiculo vehiculo, Distrito distrito, Cliente cliente, Cobertura cobertura, MetodoDePago metodoDePago, boolean activo, int id_soat, Date fecha_de_emision, double monto_prima, boolean activo1, int id_boleta, Date fecha_emision, double monto, boolean activo2) {
-        super(id_poliza, precio_base, fecha_vigencia_desde, fecha_vigencia_fin, vehiculo, distrito, cliente, cobertura, metodoDePago, activo, id_soat, fecha_de_emision, monto_prima, activo1);
-        this.id_boleta = id_boleta;
-        this.fecha_emision = fecha_emision;
-        this.monto = monto;
-        this.activo = activo2;
-    }
-
-    public int getId_boleta() {
-        return id_boleta;
-    }
-
-    public void setId_boleta(int id_boleta) {
-        this.id_boleta = id_boleta;
-    }
-
-    public Date getFecha_emision() {
-        return fecha_emision;
-    }
-
-    public void setFecha_emision(Date fecha_emision) {
-        this.fecha_emision = fecha_emision;
-    }
-
-    public double getMonto() {
-        return monto;
-    }
-
-    public void setMonto(double monto) {
-        this.monto = monto;
-    }
-
-    @Override
-    public boolean isActivo() {
-        return activo;
-    }
-
-    @Override
-    public void setActivo(boolean activo) {
-        this.activo = activo;
-    }
 }

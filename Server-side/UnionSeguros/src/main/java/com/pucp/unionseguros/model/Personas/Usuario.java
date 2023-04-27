@@ -1,41 +1,41 @@
 package com.pucp.unionseguros.model.Personas;
 
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDate;
 import java.util.Date;
+@Entity
+@Table(name = "usuario")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+public class Usuario {
 
-public class Usuario extends Persona{
 
+    @Id
+    @Column(name = "id_usuario", nullable = false)
+    private Integer idUsuario;
+
+    @MapsId
+    @OneToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "id_usuario", nullable = false)
+    private Persona persona;
+
+    @Column(name = "email", length = 100)
     private String email;
+
+    @Column(name = "`contraseña`", length = 30)
     private String contraseña;
-    private Date fecha_creacion;
 
-    public Usuario(int id_persona, String nombres, String apellido_paterno, String apellido_materno, Date fecha_nacimiento, String telefono, boolean activo, TipoDocumento tipo_documento, String numero_documento, String direccion, String email, String contraseña, Date fecha_creacion) {
-        super(id_persona, nombres, apellido_paterno, apellido_materno, fecha_nacimiento, telefono, activo, tipo_documento, numero_documento, direccion);
-        this.email = email;
-        this.contraseña = contraseña;
-        this.fecha_creacion = fecha_creacion;
-    }
+    @Column(name = "fecha_creacion")
+    private LocalDate fechaCreacion;
 
-    public String getEmail() {
-        return email;
-    }
+    @Column(name = "activo")
+    private boolean activo;
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getContraseña() {
-        return contraseña;
-    }
-
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
-    }
-
-    public Date getFecha_creacion() {
-        return fecha_creacion;
-    }
-
-    public void setFecha_creacion(Date fecha_creacion) {
-        this.fecha_creacion = fecha_creacion;
-    }
 }

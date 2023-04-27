@@ -1,47 +1,32 @@
 package com.pucp.unionseguros.model.SOAT;
 
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.math.BigDecimal;
+
+@Entity
+@Table(name = "plan_soat")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class PlanSOAT {
-    private int id_plan_soat;
-    private double cobertura;
-    private double precio;
+    @Id
+    @Column(name = "id_plan_soat", nullable = false)
+    private Integer id;
+
+    @Column(name = "cobertura", precision = 10, scale = 2)
+    private BigDecimal cobertura;
+
+    @Column(name = "precio", precision = 10, scale = 2)
+    private BigDecimal precio;
+
+    @Column(name = "activo")
     private boolean activo;
 
-    public PlanSOAT(int id_plan_soat, double cobertura, double precio, boolean activo) {
-        this.id_plan_soat = id_plan_soat;
-        this.cobertura = cobertura;
-        this.precio = precio;
-        this.activo = activo;
-    }
 
-    public int getId_plan_soat() {
-        return id_plan_soat;
-    }
-
-    public void setId_plan_soat(int id_plan_soat) {
-        this.id_plan_soat = id_plan_soat;
-    }
-
-    public double getCobertura() {
-        return cobertura;
-    }
-
-    public void setCobertura(double cobertura) {
-        this.cobertura = cobertura;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
-
-    public boolean isActivo() {
-        return activo;
-    }
-
-    public void setActivo(boolean activo) {
-        this.activo = activo;
-    }
 }
