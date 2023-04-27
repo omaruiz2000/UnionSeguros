@@ -1,35 +1,29 @@
 package com.pucp.unionseguros.model.Personas;
 
+import com.pucp.unionseguros.model.SOAT.BoletaDeVenta;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Table(name = "tipo_documento")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class TipoDocumento {
-    private int id_tipo_documento;
-    private String nombre_documento;
+    @Id
+    @Column(name = "id_tipo_documento", nullable = false)
+    private Integer id;
+
+    @Column(name = "nombre", length = 20)
+    private String nombre;
+
+    @Column(name = "activo")
     private boolean activo;
 
-    public TipoDocumento(int id_tipo_documento, String nombre_documento, boolean activo) {
-        this.id_tipo_documento = id_tipo_documento;
-        this.nombre_documento = nombre_documento;
-        this.activo = activo;
-    }
-    public boolean isActivo() {
-        return activo;
-    }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
-    }
-    public int getId_tipo_documento() {
-        return id_tipo_documento;
-    }
 
-    public void setId_tipo_documento(int id_tipo_documento) {
-        this.id_tipo_documento = id_tipo_documento;
-    }
-
-    public String getNombre_documento() {
-        return nombre_documento;
-    }
-
-    public void setNombre_documento(String nombre_documento) {
-        this.nombre_documento = nombre_documento;
-    }
 }

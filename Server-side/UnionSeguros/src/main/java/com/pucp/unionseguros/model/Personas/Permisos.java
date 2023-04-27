@@ -1,38 +1,28 @@
 package com.pucp.unionseguros.model.Personas;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Entity
+@Table(name = "permisos")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Permisos {
-    private int id_permiso;
+    @Id
+    @Column(name = "id_permiso", nullable = false)
+    private Integer id;
+
+    @Column(name = "descripcion", length = 100)
     private String descripcion;
+
+    @Column(name = "activo")
     private boolean activo;
-
-
-    public Permisos(int id_permiso, String descripcion, boolean activo) {
-        this.id_permiso = id_permiso;
-        this.descripcion = descripcion;
-        this.activo = activo;
-    }
-
-    public boolean isActivo() {
-        return activo;
-    }
-
-    public void setActivo(boolean activo) {
-        this.activo = activo;
-    }
-
-    public int getId_permiso() {
-        return id_permiso;
-    }
-
-    public void setId_permiso(int id_permiso) {
-        this.id_permiso = id_permiso;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
 }

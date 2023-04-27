@@ -1,42 +1,42 @@
 package com.pucp.unionseguros.model.Personas;
 
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.Date;
 
+@Entity
+@Table(name = "cliente")
+@NoArgsConstructor
+@Getter
+@Setter
+@AllArgsConstructor
+public class Cliente {
 
-public class Cliente extends Usuario{
+    @Id
+    @Column(name = "id_usuario", nullable = false)
+    private Integer id;
 
-    private boolean ListaNegra;
+    @MapsId
+    @OneToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "id_usuario", nullable = false)
+    private Usuario usuario;
+
+    @Column(name = "activo")
     private boolean activo;
-    private ArrayList<Roles> listaRoles;
-    public boolean isActivo() {
-        return activo;
-    }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
-    }
+    @Column(name = "baneado")
+    private boolean baneado;
 
-    public boolean isListaNegra() {
-        return ListaNegra;
-    }
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "fid_roles")
+    private Roles fidRoles;
 
-    public void setListaNegra(boolean listaNegra) {
-        ListaNegra = listaNegra;
-    }
 
-    public ArrayList<Roles> getListaRoles() {
-        return listaRoles;
-    }
 
-    public void setListaRoles(ArrayList<Roles> listaRoles) {
-        this.listaRoles = listaRoles;
-    }
 
-    public Cliente(int id_persona, String nombres, String apellido_paterno, String apellido_materno, Date fecha_nacimiento, String telefono, boolean activo, TipoDocumento tipo_documento, String numero_documento, String direccion, String email, String contraseña, Date fecha_creacion, boolean listaNegra, boolean activo1, ArrayList<Roles> listaRoles) {
-        super(id_persona, nombres, apellido_paterno, apellido_materno, fecha_nacimiento, telefono, activo, tipo_documento, numero_documento, direccion, email, contraseña, fecha_creacion);
-        ListaNegra = listaNegra;
-        this.activo = activo1;
-        this.listaRoles = listaRoles;
-    }
 }
