@@ -20,6 +20,7 @@ import java.util.Date;
 @Setter
 public class SOAT {
 
+    @Id
     @Column(name = "id_soat", nullable = false)
     private Integer id;
 
