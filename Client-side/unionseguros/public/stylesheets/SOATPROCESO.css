@@ -1,0 +1,254 @@
+.main-container{
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,211,211,1) 53%, rgba(255,255,255,1) 100%);
+}
+
+.ProgressBar {
+    margin: 0px;
+    padding: 0em 0 0em;
+    width: 500px;
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ProgressBar-step {
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .ProgressBar-step:before, .ProgressBar-step:after {
+    content: "";
+    height: 0.5em;
+    /* background-color: #cecece; */
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.25s ease-out;
+  }
+  .ProgressBar-step:first-child:before, .ProgressBar-step:first-child:after {
+    display: none;
+  }
+  /* .ProgressBar-step:after {
+    background-color: #C8102E;
+    width: 0%;
+  } */
+
+  .ProgressBar-step.is-complete + .ProgressBar-step.is-current:after, .ProgressBar-step.is-complete + .ProgressBar-step.is-complete:after {
+    width: 100%;
+  }
+  
+  .ProgressBar-icon {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #cecece;
+    fill: #cecece;
+    border-radius: 50%;
+    padding: 0.5em;
+    max-width: 100%;
+    z-index: 10;
+    position: relative;
+    transition: all 0.25s ease-out;
+  }
+  .is-current .ProgressBar-icon {
+    fill: #C8102E;
+    background-color: #C8102E;
+  }
+  .is-complete .ProgressBar-icon {
+    fill: #cecece;
+    background-color: #C8102E;
+  }
+  
+  .ProgressBar-stepLabel {
+    display: block;
+    color: #cecece;
+    position: absolute;
+    padding-top: 0.5em;
+    width: 100%;
+    transition: all 0.25s ease-out;
+  }
+  .is-current > .ProgressBar-stepLabel, .is-complete > .ProgressBar-stepLabel {
+    color: #C8102E;
+  }
+  
+  .progress-bar {
+    max-width: 1000px;
+    margin: 4em auto;
+    font-size: 16px;
+  }
+
+  .contol-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    height: fit-content;
+  }
+
+  .content-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 0% auto;
+    box-shadow: rgba(0,0,0,0.2) 10px 10px 20px 5px;
+  }
+
+#advance{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.content{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.info-vehi-form-item{
+    margin: 10px;
+    margin-right: 30px;
+    width: 100%;
+}
+
+.info-vehi-form-item select, .info-vehi-form-item input{
+    font-size: 16px;
+    width: 90%;
+}
+
+.info-vehi-form-line{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+}
+/* elejir---------------------------------------------------------------------------------- */
+.div-plans{
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+  .content-plan{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin-bottom: 10px;
+  }
+
+  .plan-soat {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: rgba(200, 16, 46, 6%);
+    border-radius: 10px;
+    position:relative
+    
+}
+
+  .plan-soat-description {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+
+
+  input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    position: absolute;
+    bottom:   0;
+
+  }
+  
+  input[type="radio"]:before {
+    content: "seleccionar";
+     border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #C8102E;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 10px;
+  }
+  
+  input[type="radio"]:checked:before {
+    content: "Sleccionado";
+     border: none;
+  border-radius: 5px;
+  background-color: #C8102E;
+  color: white;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 10px;
+  }
+
+  .content-cantainer-item{
+    margin: 10px;
+    padding: 10px;
+  }
+
+
+  /* tarjeta ------------------------------------- */
+  /* Custom normalize.css */
+
+
+  .card {
+    width: 17.5rem;
+    height: 11rem;
+    background: rgb(200,16,46);
+    background: linear-gradient(164deg, rgba(200,16,46,0.6783088235294117) 28%, rgba(255,255,255,1) 100%);
+    border-radius: 0.7rem;
+    padding: 1.3rem 1.6rem;
+    margin: 0 auto;
+    box-shadow: rgba(0,0,0,0.2) 10px 10px 10px 5px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  #card-logo{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 3rem;
+
+  }
+
+  /* resumen ---------------------------------------------- */
+.div-result {
+    display:none;
+}
+  .contect-result{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 30px;
+  }
+
+#descargarConstancia{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
