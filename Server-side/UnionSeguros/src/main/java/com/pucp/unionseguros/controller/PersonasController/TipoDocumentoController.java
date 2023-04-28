@@ -4,9 +4,7 @@ import com.pucp.unionseguros.model.Personas.TipoDocumento;
 import com.pucp.unionseguros.service.PersonasService.TipoDocumentoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,8 +21,16 @@ public class TipoDocumentoController {
     }
 
 
-    @GetMapping
-    public List<TipoDocumento> getTiposDocumentos(){
-        return tipoDocumentoService.listarTipoDocumentos();
+
+//    @GetMapping
+//    public List<TipoDocumento> getTiposDocumentos(){
+//        return tipoDocumentoService.listarTipoDocumentos();
+//    }
+
+
+    @PostMapping
+    public void insertarNuevoTipoDocumento(@RequestBody TipoDocumento tipoDocumento){
+        tipoDocumentoService.insertarTipoDocumento(tipoDocumento);
     }
+
 }
