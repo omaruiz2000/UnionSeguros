@@ -2,7 +2,7 @@ var stage = 0;
 
 document.querySelector("#advance").addEventListener("click", function () {
     if (stage == 3) {
-        window.location.href = "/";
+        window.location.href = "/SOAT";
     }
     var bar = document.querySelector(".ProgressBar");
     if (bar.querySelectorAll(".is-current").length > 0) {
@@ -32,7 +32,7 @@ document.querySelector("#previous").addEventListener("click", function () {
 
     if (stage == 0) {
         if (confirm("Deseas cancelar el proceso?")) {
-            window.location.href = "/";
+            window.location.href = "/SOAT";
             return;
         } else {
            return;

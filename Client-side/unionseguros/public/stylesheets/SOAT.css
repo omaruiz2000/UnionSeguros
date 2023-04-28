@@ -1,0 +1,195 @@
+/*COTIZA INICIO*/
+
+.main-cotiza{
+    height: 50vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,211,211,1) 53%, rgba(255,255,255,1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .main-cotiza p{
+    font-size: 48px;
+    text-align: center;
+    margin: 0 0 50px 0;
+    
+  }
+  
+  .main-cotiza-container{
+    display: block;
+    height: auto;
+    width: 300px;
+    position: relative;
+    padding: 10px 15px 50px 15px;
+    margin: 0 15px 50px 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.2) 10px 10px 20px 5px;
+  }
+  .main-cotiza-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    margin: 0% auto;
+  }
+  
+  
+  .content-item select, .content-item input{
+    font-size: 16px;
+    width: 90%;
+}
+  
+  .content-item{
+    margin: 10px;
+    margin-right: 30px;
+    width: 100%;
+  }
+  
+  
+  
+/*COTIZA FIN*/
+
+/*OFRECE INICIO*/
+#main-ofrece {
+    background-image: url('../resources/images/fondoManeja.jpg');
+    background-color: #041E42;
+    background-size: cover;
+    background-position: centre centre;
+    background-attachment: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #main-ofrece-container {
+    display: block;
+    height: auto;
+    width: 500px;
+    
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.2) 10px 10px 20px 5px;
+  }
+  
+  #main-ofrece-container h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .ofrecimiento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: row;
+  }
+  
+  .textoOfrecimiento{
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: #041E42;
+  }
+  
+  .ofrecimiento img {
+    align-self: center;
+    width: 45px;
+    height: 45PX;
+    margin-right: 20px;
+    margin-left: 20px;
+    object-fit: cover;
+  }
+  
+  .ofrecimiento h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .ofrecimiento p {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+  }
+  /*OFRECE FIN*/
+  
+  /*FAQ INICIO*/
+  .main-faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px auto;
+    position: relative;
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  
+  .main-faq h1{
+    color: #041E42;
+    font-size: 32px;
+    margin: 30px;
+  }
+  
+  .faq-container {
+    display: block;
+    height: auto;
+    width: 550px;
+    
+  }
+  
+  .faq-item {
+    margin-bottom: 0;
+    color: #041E42;
+  }
+  
+  .faq-question {
+    cursor: pointer;
+    background-color: #eee;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+  
+  }
+  
+  .faq-answer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    font-size: 16px;
+    display: none;
+  }
+  
+  .faq-toggle-icon {
+    
+  }
+  
+  .faq-toggle-icon.active {
+    transform: rotate(180deg);
+  }
+
+  #frist-faq-item{
+    border-radius: 10px 10px 0 0;
+  }
+
+  #last-faq-item{
+    border-radius:   0 0 10px 10px;
+  }
+  /*FAQ FIN*/
+  /*MAIN FIN*/
+  
+ #cotizar{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
