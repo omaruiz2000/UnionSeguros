@@ -1,5 +1,5 @@
 .main-container{
-    height: 100vh;
+    height: 80vh;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,211,211,1) 53%, rgba(255,255,255,1) 100%);
 }

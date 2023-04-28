@@ -1,51 +1,54 @@
-<section class ="main-cotiza">
-    <p>Cotiza y compra tu SOAT electrónico<br>
-        <b>100% online</b>
-    </p>
+<div class ="main-cotiza">
+    <h1>Cotiza y compra tu SOAT electrónico</h1>
+    <h1>100% online</h1>
+
     <div class="main-cotiza-container">
         <div class="main-cotiza-content">
             <h2>SOAT Electrónico</h2>
             <div class="content-cuerpo">
                 <div class="content-item">
                     <h3>Tipo de documento</h3>
-                    <select>
+                    <select id = "select-documento">
                         <option value="" disabled selected>Seleccione</option>
+                        <option value="DNI"  >DNI</option>
+                        <option value="CE"  >CE</option>
                     </select>
                 </div>
                 <div class="content-item">
                     <h3>Número de documento</h3>
-                    <input placeholder="Ingresar número"></input>
+                    <input placeholder="Ingresar número" id = "txt-documento"></input>
                 </div>
                 <div class="content-item">
                     <h3>Placa</h3>
-                    <input placeholder="Ingrese la placa"></input>
+                    <input placeholder="Ingrese la placa"  id = "txt-placa"></input>
                 </div>
             </div>
-            <button class ="button-red"> Cotizar </button>
+            
         </div>
+        <button class ="button-red" id = "cotizar"> Cotizar </button>
     </div>
 
-</section>
+</div>
 
 <section id="main-ofrece">
     <div id="main-ofrece-container">
-        <h2>Nuestro <b>SOAT</b> te ofrece:</h2>
+        <h2>Nuestro SOAT te ofrece:</h2>
         <div class="ofrecimiento">
-            <img src="images/extra/planesRenovacion.png" alt="Logo Planes Renovacion">
+            <img src="public/resources/images/Media.png" alt="Logo Planes Renovacion">
             <div class="textoOfrecimiento">
                 <h3>Planes de renovación</h3>
                 <p>Descubre la diversidad de planes de renovación disponibles para ti. Ofrecemos opciones flexibles y personalizadas que se ajustan a tus necesidades, brindándote la tranquilidad y protección que mereces.</p>
             </div>
             </div>
         <div class="ofrecimiento">
-            <img src="images/extra/programasDescuento.png" alt="Logo Programa Descuento">
+            <img src="public/resources/images/Commerce.png" alt="Logo Programa Descuento">
             <div class="textoOfrecimiento">
                 <h3>Programa de descuentos</h3>
                 <p>Obtén múltiples descuentos en tu SOAT al adquirirlo con nuestra empresa. Ahorra en diferentes lugares de Perú con nuestras ofertas especiales. ¡Aprovecha nuestros descuentos!</p>
             </div>
         </div>
         <div class="ofrecimiento">
-            <img src="images/extra/afiliados.png" alt="Logo Afiliados">
+            <img src="public/resources/images/Property 1=person.3.fill.png" alt="Logo Afiliados">
             <div class="textoOfrecimiento">
                 <h3>Afiliados</h3>
                 <p>Al adquirir tu SOAT con Union, te ofrecemos beneficios exclusivos con nuestros afiliados. Disfruta de descuentos y ventajas en una amplia red de colaboradores.</p>
@@ -57,12 +60,12 @@
 <section class ="main-faq">
     <h1>Preguntas Frecuentes SOAT Electrónico</h1>
     <div class="faq-container">
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(1)">
+        <div class="faq-item" >
+            <div class="faq-question" onclick="toggleAnswer(1)" id = "frist-faq-item">
                 ¿Qué es el SOAT?
                 <span class="faq-toggle-icon">+</span>
             </div>
-            <div class="faq-answer" id="answer1">
+            <div class="faq-answer" id="answer1" >
                 El SOAT es el Seguro Obligatorio de Accidentes de Tránsito. Es un seguro obligatorio que se requiere para circular con un vehículo en las carreteras y vías públicas del país.
             </div>
         <div class="faq-item">
@@ -101,8 +104,8 @@
                 Tu SOAT llegará por correo electrónico en un plazo de 24 horas hábiles a partir de la emisión de la póliza.
             </div>
         </div>
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(6)">
+        <div class="faq-item" id = "las-faq-item">
+            <div class="faq-question" onclick="toggleAnswer(6)" id = "last-faq-item">
                 ¿Por qué varía el precio de mi SOAT?
                 <span class="faq-toggle-icon">+</span>
             </div>
@@ -113,3 +116,4 @@
     </div>
 
 </section>
+<script src="public/scripts/SOAT.js"></script>
