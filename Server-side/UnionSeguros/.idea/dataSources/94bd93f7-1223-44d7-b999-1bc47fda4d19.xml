@@ -1,0 +1,1752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="UnionSeguros@unionseguros.cigom8xhau0r.us-east-1.rds.amazonaws.com">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.48">
+    <root id="1">
+      <DefaultCasing>exact</DefaultCasing>
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
+      <ServerVersion>8.0.32</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="UnionSeguros">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="db_books"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="sys"/>
+    <routine id="8" parent="2" name="ELIMINAR_BOLETA_DE_VENTA">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>78</SourceTextLength>
+    </routine>
+    <routine id="9" parent="2" name="ELIMINAR_COBERTURA">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>78</SourceTextLength>
+    </routine>
+    <routine id="10" parent="2" name="ELIMINAR_MARCA_VEHICULO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>93</SourceTextLength>
+    </routine>
+    <routine id="11" parent="2" name="ELIMINAR_METODO_DE_PAGO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>77</SourceTextLength>
+    </routine>
+    <routine id="12" parent="2" name="ELIMINAR_MODELO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>69</SourceTextLength>
+    </routine>
+    <routine id="13" parent="2" name="ELIMINAR_PLAN_SOAT">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>78</SourceTextLength>
+    </routine>
+    <routine id="14" parent="2" name="ELIMINAR_POLIZA">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>69</SourceTextLength>
+    </routine>
+    <routine id="15" parent="2" name="ELIMINAR_SOAT">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>63</SourceTextLength>
+    </routine>
+    <routine id="16" parent="2" name="ELIMINAR_TIPO_USO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>75</SourceTextLength>
+    </routine>
+    <routine id="17" parent="2" name="ELIMINAR_TIPO_VEHICULO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>90</SourceTextLength>
+    </routine>
+    <routine id="18" parent="2" name="ELIMINAR_VEHICULO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>75</SourceTextLength>
+    </routine>
+    <routine id="19" parent="2" name="INSERTAR_BOLETA_DE_VENTA">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>175</SourceTextLength>
+    </routine>
+    <routine id="20" parent="2" name="INSERTAR_COBERTURA">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>170</SourceTextLength>
+    </routine>
+    <routine id="21" parent="2" name="INSERTAR_MARCA_VEHICULO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>150</SourceTextLength>
+    </routine>
+    <routine id="22" parent="2" name="INSERTAR_METODO_DE_PAGO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>226</SourceTextLength>
+    </routine>
+    <routine id="23" parent="2" name="INSERTAR_MODELO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>200</SourceTextLength>
+    </routine>
+    <routine id="24" parent="2" name="INSERTAR_PLAN_SOAT">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>153</SourceTextLength>
+    </routine>
+    <routine id="25" parent="2" name="INSERTAR_POLIZA">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>292</SourceTextLength>
+    </routine>
+    <routine id="26" parent="2" name="INSERTAR_SOAT">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>214</SourceTextLength>
+    </routine>
+    <routine id="27" parent="2" name="INSERTAR_TIPO_USO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>146</SourceTextLength>
+    </routine>
+    <routine id="28" parent="2" name="INSERTAR_TIPO_VEHICULO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>176</SourceTextLength>
+    </routine>
+    <routine id="29" parent="2" name="INSERTAR_VEHICULO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>274</SourceTextLength>
+    </routine>
+    <routine id="30" parent="2" name="LISTAR_BOLETA_DE_VENTA">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>95</SourceTextLength>
+    </routine>
+    <routine id="31" parent="2" name="LISTAR_COBERTURA">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>88</SourceTextLength>
+    </routine>
+    <routine id="32" parent="2" name="LISTAR_MARCA_VEHICULO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>80</SourceTextLength>
+    </routine>
+    <routine id="33" parent="2" name="LISTAR_METODO_DE_PAGO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>116</SourceTextLength>
+    </routine>
+    <routine id="34" parent="2" name="LISTAR_MODELO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>104</SourceTextLength>
+    </routine>
+    <routine id="35" parent="2" name="LISTAR_PLAN_SOAT">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>80</SourceTextLength>
+    </routine>
+    <routine id="36" parent="2" name="LISTAR_POLIZA">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>150</SourceTextLength>
+    </routine>
+    <routine id="37" parent="2" name="LISTAR_SOAT">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>107</SourceTextLength>
+    </routine>
+    <routine id="38" parent="2" name="LISTAR_TIPO_USO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>78</SourceTextLength>
+    </routine>
+    <routine id="39" parent="2" name="LISTAR_TIPO_VEHICULO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>93</SourceTextLength>
+    </routine>
+    <routine id="40" parent="2" name="LISTAR_VEHICULO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>136</SourceTextLength>
+    </routine>
+    <routine id="41" parent="2" name="MODIFICAR_BOLETA_DE_VENTA">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>140</SourceTextLength>
+    </routine>
+    <routine id="42" parent="2" name="MODIFICAR_COBERTURA">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>132</SourceTextLength>
+    </routine>
+    <routine id="43" parent="2" name="MODIFICAR_MARCA_VEHICULO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>101</SourceTextLength>
+    </routine>
+    <routine id="44" parent="2" name="MODIFICAR_METODO_DE_PAGO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>187</SourceTextLength>
+    </routine>
+    <routine id="45" parent="2" name="MODIFICAR_MODELO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>161</SourceTextLength>
+    </routine>
+    <routine id="46" parent="2" name="MODIFICAR_PLAN_SOAT">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>112</SourceTextLength>
+    </routine>
+    <routine id="47" parent="2" name="MODIFICAR_POLIZA">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>268</SourceTextLength>
+    </routine>
+    <routine id="48" parent="2" name="MODIFICAR_SOAT">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>206</SourceTextLength>
+    </routine>
+    <routine id="49" parent="2" name="MODIFICAR_TIPO_USO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>103</SourceTextLength>
+    </routine>
+    <routine id="50" parent="2" name="MODIFICAR_TIPO_VEHICULO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>128</SourceTextLength>
+    </routine>
+    <routine id="51" parent="2" name="MODIFICAR_VEHICULO">
+      <Definer>admin@%</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>248</SourceTextLength>
+    </routine>
+    <table id="52" parent="2" name="administrador">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="53" parent="2" name="boleta_de_venta">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="54" parent="2" name="cliente">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="55" parent="2" name="cobertura">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="56" parent="2" name="cotizacion">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="57" parent="2" name="cotizacion_x_detalle_cotizacion">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="58" parent="2" name="departamento">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="59" parent="2" name="detalle_cotizacion">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="60" parent="2" name="distrito">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="61" parent="2" name="marca_vehiculo">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="62" parent="2" name="metodo_de_pago">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="63" parent="2" name="modelo">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="64" parent="2" name="permisos">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="65" parent="2" name="persona">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="66" parent="2" name="plan_soat">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="67" parent="2" name="poliza">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="68" parent="2" name="poliza_x_cobertura">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="69" parent="2" name="provincia">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="70" parent="2" name="roles">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="71" parent="2" name="soat">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="72" parent="2" name="tipo_cambio">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="73" parent="2" name="tipo_documento">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="74" parent="2" name="tipo_uso">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="75" parent="2" name="tipo_vehiculo">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="76" parent="2" name="usuario">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="77" parent="2" name="vehiculo">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <argument id="78" parent="8" name="_id_boleta">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="79" parent="9" name="_id_cobertura">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="80" parent="10" name="_id_marca_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="81" parent="11" name="_id_metodo">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="82" parent="12" name="_id_modelo">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="83" parent="13" name="_id_plan_soat">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="84" parent="14" name="_id_poliza">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="85" parent="15" name="_id_soat">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="86" parent="16" name="_id_tipo_uso">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="87" parent="17" name="_id_tipo_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="88" parent="18" name="_id_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="89" parent="19" name="_id_boleta">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="90" parent="19" name="_fid_soat">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="91" parent="19" name="_fecha_emision">
+      <DasType>date|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="92" parent="19" name="_monto">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="93" parent="20" name="_id_cobertura">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="94" parent="20" name="_nombre">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="95" parent="20" name="_descripcion">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="96" parent="20" name="_costo">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="97" parent="21" name="_id_marca_vehiculo">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="98" parent="21" name="_marca">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="99" parent="22" name="_id_metodo">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="100" parent="22" name="_nombre_metodo">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="101" parent="22" name="_numero_tarjeta">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="102" parent="22" name="_cvv">
+      <DasType>varchar(5)|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="103" parent="22" name="_fecha_vencimiento">
+      <DasType>date|0s</DasType>
+      <Position>5</Position>
+    </argument>
+    <argument id="104" parent="23" name="_id_modelo">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="105" parent="23" name="_modelo">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="106" parent="23" name="_fid_marca_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="107" parent="23" name="_fid_tipo_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="108" parent="24" name="_id_plan_soat">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="109" parent="24" name="_cobertura">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="110" parent="24" name="_precio">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="111" parent="25" name="_id_poliza">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="112" parent="25" name="_fid_metodo">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="113" parent="25" name="_fid_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="114" parent="25" name="_fid_cliente">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="115" parent="25" name="_precio_base">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>5</Position>
+    </argument>
+    <argument id="116" parent="25" name="_fecha_vigencia_desde">
+      <DasType>date|0s</DasType>
+      <Position>6</Position>
+    </argument>
+    <argument id="117" parent="25" name="_fecha_vigencia_fin">
+      <DasType>date|0s</DasType>
+      <Position>7</Position>
+    </argument>
+    <argument id="118" parent="26" name="_id_soat">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="119" parent="26" name="_fid_plan_soat">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="120" parent="26" name="_fid_poliza">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="121" parent="26" name="fecha_de_emision">
+      <DasType>date|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="122" parent="26" name="monto_prima">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>5</Position>
+    </argument>
+    <argument id="123" parent="27" name="_id_tipo_uso">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="124" parent="27" name="_nombre_tipo_uso">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="125" parent="28" name="_id_tipo_vehiculo">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="126" parent="28" name="_nombre_tipo_vehiculo">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="127" parent="29" name="_id_vehiculo">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="128" parent="29" name="_fid_tipo_uso">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="129" parent="29" name="_fid_modelo">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="130" parent="29" name="_fid_persona">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="131" parent="29" name="_anho_fabricacion">
+      <DasType>date|0s</DasType>
+      <Position>5</Position>
+    </argument>
+    <argument id="132" parent="29" name="_numero_asientos">
+      <DasType>int|0s</DasType>
+      <Position>6</Position>
+    </argument>
+    <argument id="133" parent="29" name="_placa">
+      <DasType>varchar(15)|0s</DasType>
+      <Position>7</Position>
+    </argument>
+    <argument id="134" parent="41" name="_id_boleta">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="135" parent="41" name="_fid_soat">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="136" parent="41" name="_fecha_emision">
+      <DasType>date|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="137" parent="41" name="_monto">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="138" parent="42" name="_id_cobertura">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="139" parent="42" name="_nombre">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="140" parent="42" name="_descripcion">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="141" parent="42" name="_costo">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="142" parent="43" name="_id_marca_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="143" parent="43" name="_marca">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="144" parent="44" name="_id_metodo">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="145" parent="44" name="_nombre_metodo">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="146" parent="44" name="_numero_tarjeta">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="147" parent="44" name="_cvv">
+      <DasType>varchar(5)|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="148" parent="44" name="_fecha_vencimiento">
+      <DasType>date|0s</DasType>
+      <Position>5</Position>
+    </argument>
+    <argument id="149" parent="45" name="_id_modelo">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="150" parent="45" name="_modelo">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="151" parent="45" name="_fid_marca_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="152" parent="45" name="_fid_tipo_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="153" parent="46" name="_id_plan_soat">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="154" parent="46" name="_cobertura">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="155" parent="46" name="_precio">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="156" parent="47" name="_id_poliza">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="157" parent="47" name="_fid_metodo">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="158" parent="47" name="_fid_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="159" parent="47" name="_fid_cliente">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="160" parent="47" name="_precio_base">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>5</Position>
+    </argument>
+    <argument id="161" parent="47" name="_fecha_vigencia_desde">
+      <DasType>date|0s</DasType>
+      <Position>6</Position>
+    </argument>
+    <argument id="162" parent="47" name="_fecha_vigencia_fin">
+      <DasType>date|0s</DasType>
+      <Position>7</Position>
+    </argument>
+    <argument id="163" parent="48" name="_id_soat">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="164" parent="48" name="_fid_plan_soat">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="165" parent="48" name="_fid_poliza">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="166" parent="48" name="fecha_de_emision">
+      <DasType>date|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="167" parent="48" name="monto_prima">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>5</Position>
+    </argument>
+    <argument id="168" parent="49" name="_id_tipo_uso">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="169" parent="49" name="_nombre_tipo_uso">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="170" parent="50" name="_id_tipo_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="171" parent="50" name="_nombre_tipo_vehiculo">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="172" parent="51" name="_id_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="173" parent="51" name="_fid_tipo_uso">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </argument>
+    <argument id="174" parent="51" name="_fid_modelo">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </argument>
+    <argument id="175" parent="51" name="_fid_persona">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </argument>
+    <argument id="176" parent="51" name="_anho_fabricacion">
+      <DasType>date|0s</DasType>
+      <Position>5</Position>
+    </argument>
+    <argument id="177" parent="51" name="_numero_asientos">
+      <DasType>int|0s</DasType>
+      <Position>6</Position>
+    </argument>
+    <argument id="178" parent="51" name="_placa">
+      <DasType>varchar(15)|0s</DasType>
+      <Position>7</Position>
+    </argument>
+    <column id="179" parent="52" name="id_usuario">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="180" parent="52" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="181" parent="52" name="fid_roles">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <foreign-key id="182" parent="52" name="administrador_ibfk_2">
+      <ColNames>id_usuario</ColNames>
+      <RefColNames>id_usuario</RefColNames>
+      <RefTableName>usuario</RefTableName>
+    </foreign-key>
+    <foreign-key id="183" parent="52" name="administrador_ibfk_1">
+      <ColNames>fid_roles</ColNames>
+      <RefColNames>id_roles</RefColNames>
+      <RefTableName>roles</RefTableName>
+    </foreign-key>
+    <index id="184" parent="52" name="PRIMARY">
+      <ColNames>id_usuario</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="185" parent="52" name="fid_roles">
+      <ColNames>fid_roles</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="186" parent="52" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="187" parent="53" name="id_boleta">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="188" parent="53" name="fid_soat">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="189" parent="53" name="fecha_emision">
+      <DasType>date|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="190" parent="53" name="monto">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="191" parent="53" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="192" parent="53" name="boleta_de_venta_ibfk_1">
+      <ColNames>fid_soat</ColNames>
+      <RefColNames>id_soat</RefColNames>
+      <RefTableName>soat</RefTableName>
+    </foreign-key>
+    <index id="193" parent="53" name="PRIMARY">
+      <ColNames>id_boleta</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="194" parent="53" name="fid_soat">
+      <ColNames>fid_soat</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="195" parent="53" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="196" parent="54" name="id_usuario">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="197" parent="54" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="198" parent="54" name="baneado">
+      <DasType>tinyint|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="199" parent="54" name="fid_roles">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="200" parent="54" name="cliente_ibfk_1">
+      <ColNames>id_usuario</ColNames>
+      <RefColNames>id_usuario</RefColNames>
+      <RefTableName>usuario</RefTableName>
+    </foreign-key>
+    <foreign-key id="201" parent="54" name="cliente_ibfk_2">
+      <ColNames>fid_roles</ColNames>
+      <RefColNames>id_roles</RefColNames>
+      <RefTableName>roles</RefTableName>
+    </foreign-key>
+    <index id="202" parent="54" name="PRIMARY">
+      <ColNames>id_usuario</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="203" parent="54" name="cliente_ibfk_2">
+      <ColNames>fid_roles</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="204" parent="54" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="205" parent="55" name="id_cobertura">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="206" parent="55" name="nombre">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="207" parent="55" name="descripcion">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="208" parent="55" name="costo">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="209" parent="55" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <index id="210" parent="55" name="PRIMARY">
+      <ColNames>id_cobertura</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="211" parent="55" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="212" parent="56" name="id_cotizacion">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="213" parent="56" name="fecha_cotizacion">
+      <DasType>date|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="214" parent="56" name="monto_estimado">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="215" parent="56" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="216" parent="56" name="fid_distrito">
+      <DasType>int|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="217" parent="56" name="cotizacion_ibfk_1">
+      <ColNames>fid_distrito</ColNames>
+      <RefColNames>id_distrito</RefColNames>
+      <RefTableName>distrito</RefTableName>
+    </foreign-key>
+    <index id="218" parent="56" name="PRIMARY">
+      <ColNames>id_cotizacion</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="219" parent="56" name="cotizacion_ibfk_1">
+      <ColNames>fid_distrito</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="220" parent="56" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="221" parent="57" name="fid_detalle_cotizacion">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="222" parent="57" name="fid_cotizacion">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="223" parent="57" name="id_cotizacion_x_detalle_cotizacion">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <foreign-key id="224" parent="57" name="cotizacion_x_detalle_cotizacion_ibfk_1">
+      <ColNames>fid_detalle_cotizacion</ColNames>
+      <RefColNames>id_detalle_cotizacion</RefColNames>
+      <RefTableName>detalle_cotizacion</RefTableName>
+    </foreign-key>
+    <foreign-key id="225" parent="57" name="cotizacion_x_detalle_cotizacion_ibfk_2">
+      <ColNames>fid_cotizacion</ColNames>
+      <RefColNames>id_cotizacion</RefColNames>
+      <RefTableName>cotizacion</RefTableName>
+    </foreign-key>
+    <index id="226" parent="57" name="PRIMARY">
+      <ColNames>id_cotizacion_x_detalle_cotizacion</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="227" parent="57" name="fid_detalle_cotizacion">
+      <ColNames>fid_detalle_cotizacion</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="228" parent="57" name="fid_cotizacion">
+      <ColNames>fid_cotizacion</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="229" parent="57" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="230" parent="58" name="id_departamento">
+      <AutoIncrement>26</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="231" parent="58" name="nombre_departamento">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="232" parent="58" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <index id="233" parent="58" name="PRIMARY">
+      <ColNames>id_departamento</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="234" parent="58" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="235" parent="59" name="id_detalle_cotizacion">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="236" parent="59" name="beneficio">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="237" parent="59" name="monto">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="238" parent="59" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <index id="239" parent="59" name="PRIMARY">
+      <ColNames>id_detalle_cotizacion</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="240" parent="59" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="241" parent="60" name="id_distrito">
+      <AutoIncrement>1854</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="242" parent="60" name="nombre_distrito">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="243" parent="60" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="244" parent="60" name="fid_provincia">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="245" parent="60" name="distrito_ibfk_1">
+      <ColNames>fid_provincia</ColNames>
+      <RefColNames>id_provincia</RefColNames>
+      <RefTableName>provincia</RefTableName>
+    </foreign-key>
+    <index id="246" parent="60" name="PRIMARY">
+      <ColNames>id_distrito</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="247" parent="60" name="fid_provincia">
+      <ColNames>fid_provincia</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="248" parent="60" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="249" parent="61" name="id_marca_vehiculo">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="250" parent="61" name="marca">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="251" parent="61" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <index id="252" parent="61" name="PRIMARY">
+      <ColNames>id_marca_vehiculo</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="253" parent="61" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="254" parent="62" name="id_metodo">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="255" parent="62" name="nombre_metodo">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="256" parent="62" name="numero_tarjeta">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="257" parent="62" name="cvv">
+      <DasType>varchar(5)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="258" parent="62" name="fecha_vencimiento">
+      <DasType>date|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="259" parent="62" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <index id="260" parent="62" name="PRIMARY">
+      <ColNames>id_metodo</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="261" parent="62" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="262" parent="63" name="id_modelo">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="263" parent="63" name="fid_marca_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="264" parent="63" name="fid_tipo_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="265" parent="63" name="modelo">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="266" parent="63" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="267" parent="63" name="modelo_ibfk_1">
+      <ColNames>fid_marca_vehiculo</ColNames>
+      <RefColNames>id_marca_vehiculo</RefColNames>
+      <RefTableName>marca_vehiculo</RefTableName>
+    </foreign-key>
+    <foreign-key id="268" parent="63" name="modelo_ibfk_2">
+      <ColNames>fid_tipo_vehiculo</ColNames>
+      <RefColNames>id_tipo_vehiculo</RefColNames>
+      <RefTableName>tipo_vehiculo</RefTableName>
+    </foreign-key>
+    <index id="269" parent="63" name="PRIMARY">
+      <ColNames>id_modelo</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="270" parent="63" name="fid_marca_vehiculo">
+      <ColNames>fid_marca_vehiculo</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="271" parent="63" name="fid_tipo_vehiculo">
+      <ColNames>fid_tipo_vehiculo</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="272" parent="63" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="273" parent="64" name="id_permiso">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="274" parent="64" name="descripcion">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="275" parent="64" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <index id="276" parent="64" name="PRIMARY">
+      <ColNames>id_permiso</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="277" parent="64" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="278" parent="65" name="id_persona">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="279" parent="65" name="nombre">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="280" parent="65" name="apellido_paterno">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="281" parent="65" name="apellido_materno">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="282" parent="65" name="fecha_nacimiento">
+      <DasType>date|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="283" parent="65" name="telefono">
+      <DasType>int|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="284" parent="65" name="direccion">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="285" parent="65" name="numero_documento">
+      <DasType>varchar(20)|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <column id="286" parent="65" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>9</Position>
+    </column>
+    <column id="287" parent="65" name="fid_tipo_documento">
+      <DasType>int|0s</DasType>
+      <Position>10</Position>
+    </column>
+    <foreign-key id="288" parent="65" name="persona_ibfk_1">
+      <ColNames>fid_tipo_documento</ColNames>
+      <RefColNames>id_tipo_documento</RefColNames>
+      <RefTableName>tipo_documento</RefTableName>
+    </foreign-key>
+    <index id="289" parent="65" name="PRIMARY">
+      <ColNames>id_persona</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="290" parent="65" name="fid_tipo_documento">
+      <ColNames>fid_tipo_documento</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="291" parent="65" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="292" parent="66" name="id_plan_soat">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="293" parent="66" name="cobertura">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="294" parent="66" name="precio">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="295" parent="66" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <index id="296" parent="66" name="PRIMARY">
+      <ColNames>id_plan_soat</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="297" parent="66" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="298" parent="67" name="id_poliza">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="299" parent="67" name="fid_metodo">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="300" parent="67" name="fid_vehiculo">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="301" parent="67" name="fid_cliente">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="302" parent="67" name="precio_base">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="303" parent="67" name="fecha_vigencia_desde">
+      <DasType>date|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="304" parent="67" name="fecha_vigencia_fin">
+      <DasType>date|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="305" parent="67" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <foreign-key id="306" parent="67" name="poliza_ibfk_1">
+      <ColNames>fid_metodo</ColNames>
+      <RefColNames>id_metodo</RefColNames>
+      <RefTableName>metodo_de_pago</RefTableName>
+    </foreign-key>
+    <foreign-key id="307" parent="67" name="poliza_ibfk_2">
+      <ColNames>fid_vehiculo</ColNames>
+      <RefColNames>id_vehiculo</RefColNames>
+      <RefTableName>vehiculo</RefTableName>
+    </foreign-key>
+    <foreign-key id="308" parent="67" name="poliza_ibfk_3">
+      <ColNames>fid_cliente</ColNames>
+      <RefColNames>id_usuario</RefColNames>
+      <RefTableName>cliente</RefTableName>
+    </foreign-key>
+    <index id="309" parent="67" name="PRIMARY">
+      <ColNames>id_poliza</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="310" parent="67" name="fid_metodo">
+      <ColNames>fid_metodo</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="311" parent="67" name="fid_vehiculo">
+      <ColNames>fid_vehiculo</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="312" parent="67" name="fid_cliente">
+      <ColNames>fid_cliente</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="313" parent="67" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="314" parent="68" name="id_poliza_x_cobertura">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="315" parent="68" name="fid_poliza">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="316" parent="68" name="fid_cobertura">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <foreign-key id="317" parent="68" name="poliza_x_cobertura_ibfk_1">
+      <ColNames>fid_poliza</ColNames>
+      <RefColNames>id_poliza</RefColNames>
+      <RefTableName>poliza</RefTableName>
+    </foreign-key>
+    <foreign-key id="318" parent="68" name="poliza_x_cobertura_ibfk_2">
+      <ColNames>fid_cobertura</ColNames>
+      <RefColNames>id_cobertura</RefColNames>
+      <RefTableName>cobertura</RefTableName>
+    </foreign-key>
+    <index id="319" parent="68" name="PRIMARY">
+      <ColNames>id_poliza_x_cobertura</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="320" parent="68" name="fid_poliza">
+      <ColNames>fid_poliza</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="321" parent="68" name="fid_cobertura">
+      <ColNames>fid_cobertura</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="322" parent="68" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="323" parent="69" name="id_provincia">
+      <AutoIncrement>196</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="324" parent="69" name="nombre_provincia">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="325" parent="69" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="326" parent="69" name="fid_departamento">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="327" parent="69" name="provincia_ibfk_1">
+      <ColNames>fid_departamento</ColNames>
+      <RefColNames>id_departamento</RefColNames>
+      <RefTableName>departamento</RefTableName>
+    </foreign-key>
+    <index id="328" parent="69" name="PRIMARY">
+      <ColNames>id_provincia</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="329" parent="69" name="fid_departamento">
+      <ColNames>fid_departamento</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="330" parent="69" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="331" parent="70" name="id_roles">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="332" parent="70" name="descripcion">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="333" parent="70" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="334" parent="70" name="fid_permisos">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="335" parent="70" name="roles_ibfk_1">
+      <ColNames>fid_permisos</ColNames>
+      <RefColNames>id_permiso</RefColNames>
+      <RefTableName>permisos</RefTableName>
+    </foreign-key>
+    <index id="336" parent="70" name="PRIMARY">
+      <ColNames>id_roles</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="337" parent="70" name="fid_permisos">
+      <ColNames>fid_permisos</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="338" parent="70" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="339" parent="71" name="id_soat">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="340" parent="71" name="fid_plan_soat">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="341" parent="71" name="fid_poliza">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="342" parent="71" name="fecha_de_emision">
+      <DasType>date|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="343" parent="71" name="monto_prima">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="344" parent="71" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="345" parent="71" name="soat_ibfk_1">
+      <ColNames>fid_plan_soat</ColNames>
+      <RefColNames>id_plan_soat</RefColNames>
+      <RefTableName>plan_soat</RefTableName>
+    </foreign-key>
+    <foreign-key id="346" parent="71" name="soat_ibfk_2">
+      <ColNames>fid_poliza</ColNames>
+      <RefColNames>id_poliza</RefColNames>
+      <RefTableName>poliza</RefTableName>
+    </foreign-key>
+    <index id="347" parent="71" name="PRIMARY">
+      <ColNames>id_soat</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="348" parent="71" name="fid_plan_soat">
+      <ColNames>fid_plan_soat</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="349" parent="71" name="fid_poliza">
+      <ColNames>fid_poliza</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="350" parent="71" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="351" parent="72" name="id_tipo_cambio">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="352" parent="72" name="moneda">
+      <DasType>varchar(20)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="353" parent="72" name="valor">
+      <DasType>decimal(10,2 digit)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="354" parent="72" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <index id="355" parent="72" name="PRIMARY">
+      <ColNames>id_tipo_cambio</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="356" parent="72" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="357" parent="73" name="id_tipo_documento">
+      <AutoIncrement>4</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="358" parent="73" name="nombre">
+      <DasType>varchar(20)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="359" parent="73" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <index id="360" parent="73" name="PRIMARY">
+      <ColNames>id_tipo_documento</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="361" parent="73" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="362" parent="74" name="id_tipo_uso">
+      <AutoIncrement>2</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="363" parent="74" name="nombre_tipo_uso">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="364" parent="74" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <index id="365" parent="74" name="PRIMARY">
+      <ColNames>id_tipo_uso</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="366" parent="74" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="367" parent="75" name="id_tipo_vehiculo">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="368" parent="75" name="nombre_tipo_vehiculo">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="369" parent="75" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <index id="370" parent="75" name="PRIMARY">
+      <ColNames>id_tipo_vehiculo</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="371" parent="75" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="372" parent="76" name="id_usuario">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="373" parent="76" name="email">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="374" parent="76" name="contraseña">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="375" parent="76" name="fecha_creacion">
+      <DasType>date|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="376" parent="76" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="377" parent="76" name="usuario_ibfk_1">
+      <ColNames>id_usuario</ColNames>
+      <RefColNames>id_persona</RefColNames>
+      <RefTableName>persona</RefTableName>
+    </foreign-key>
+    <index id="378" parent="76" name="PRIMARY">
+      <ColNames>id_usuario</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="379" parent="76" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="380" parent="77" name="id_vehiculo">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="381" parent="77" name="fid_tipo_uso">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="382" parent="77" name="fid_modelo">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="383" parent="77" name="fid_persona">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="384" parent="77" name="anho_fabricacion">
+      <DasType>date|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="385" parent="77" name="numero_asientos">
+      <DasType>int|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="386" parent="77" name="placa">
+      <DasType>varchar(15)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="387" parent="77" name="activo">
+      <DasType>tinyint|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <foreign-key id="388" parent="77" name="vehiculo_ibfk_1">
+      <ColNames>fid_tipo_uso</ColNames>
+      <RefColNames>id_tipo_uso</RefColNames>
+      <RefTableName>tipo_uso</RefTableName>
+    </foreign-key>
+    <foreign-key id="389" parent="77" name="vehiculo_ibfk_2">
+      <ColNames>fid_modelo</ColNames>
+      <RefColNames>id_modelo</RefColNames>
+      <RefTableName>modelo</RefTableName>
+    </foreign-key>
+    <foreign-key id="390" parent="77" name="vehiculo_ibfk_3">
+      <ColNames>fid_persona</ColNames>
+      <RefColNames>id_persona</RefColNames>
+      <RefTableName>persona</RefTableName>
+    </foreign-key>
+    <index id="391" parent="77" name="PRIMARY">
+      <ColNames>id_vehiculo</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="392" parent="77" name="fid_tipo_uso">
+      <ColNames>fid_tipo_uso</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="393" parent="77" name="fid_modelo">
+      <ColNames>fid_modelo</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="394" parent="77" name="fid_persona">
+      <ColNames>fid_persona</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="395" parent="77" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>

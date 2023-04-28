@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @Service
-//@RestController
+//Sergio Dadic
 @RequestMapping(path = "api/v1/cotizacion")
 public class CotizacionController {
 

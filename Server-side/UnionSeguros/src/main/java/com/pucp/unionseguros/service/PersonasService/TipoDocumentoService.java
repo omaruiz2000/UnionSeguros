@@ -19,4 +19,8 @@ public class TipoDocumentoService {
     public List<TipoDocumento> listarTipoDocumentos(){
         return tipoDocumentoRepository.findAll();
     }
+
+    public void insertarTipoDocumento(TipoDocumento tipoDocumento){
+        tipoDocumentoRepository.save(tipoDocumento);
+    }
 }
