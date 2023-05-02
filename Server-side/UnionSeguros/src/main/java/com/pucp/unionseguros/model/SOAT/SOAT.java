@@ -21,6 +21,7 @@ import java.util.Date;
 public class SOAT {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_soat", nullable = false)
     private Integer id;
 
@@ -36,7 +37,7 @@ public class SOAT {
     private LocalDate fechaDeEmision;
 
     @Column(name = "monto_prima", precision = 10, scale = 2)
-    private BigDecimal montoPrima;
+    private double montoPrima;
 
     @Column(name = "activo")
     private boolean activo;

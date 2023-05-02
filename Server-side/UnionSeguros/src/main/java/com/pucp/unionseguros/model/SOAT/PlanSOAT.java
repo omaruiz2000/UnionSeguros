@@ -16,6 +16,7 @@ import java.math.BigDecimal;
 @Setter
 public class PlanSOAT {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_plan_soat", nullable = false)
     private Integer id;
 

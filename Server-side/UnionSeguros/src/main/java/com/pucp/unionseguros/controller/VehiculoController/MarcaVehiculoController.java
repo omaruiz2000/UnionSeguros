@@ -4,9 +4,7 @@ import com.pucp.unionseguros.model.Vehiculo.MarcaVehiculo;
 import com.pucp.unionseguros.service.VehiculoService.MarcaVehiculoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,5 +23,10 @@ public class MarcaVehiculoController {
     @GetMapping
     public List<MarcaVehiculo> getMarcaVehiculo(){
         return marcaVehiculoService.listarMarcaVehiculo();
+    }
+
+    @PostMapping()
+    public void insertarNuevoMarcaVehiculo(@RequestBody MarcaVehiculo marcaVehiculo){
+        marcaVehiculoService.insertarMarcaVehiculo(marcaVehiculo);
     }
 }

@@ -16,8 +16,9 @@ import java.util.Date;
 @NoArgsConstructor
 public class Administrador {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario", nullable = false)
-    private Integer id;
+    private Integer idUsuario;
 
     @MapsId
     @OneToOne(fetch = FetchType.LAZY, optional = false)

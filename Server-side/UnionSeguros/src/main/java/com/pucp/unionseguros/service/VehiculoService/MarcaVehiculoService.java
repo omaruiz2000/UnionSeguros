@@ -19,4 +19,8 @@ public class MarcaVehiculoService {
     public List<MarcaVehiculo> listarMarcaVehiculo(){
         return marcaVehiculoRepository.findAll();
     }
+
+    public void insertarMarcaVehiculo(MarcaVehiculo marcaVehiculo){
+        marcaVehiculoRepository.save(marcaVehiculo);
+    }
 }

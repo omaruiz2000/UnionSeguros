@@ -4,9 +4,7 @@ import com.pucp.unionseguros.model.Vehiculo.TipoUso;
 import com.pucp.unionseguros.service.VehiculoService.TipoUsoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,5 +23,10 @@ public class TipoUsoController {
     @GetMapping
     public List<TipoUso> getTipoUsos(){
        return tipoUsoService.listarTipoUso();
+    }
+
+    @PostMapping()
+    public void registrarNuevoTipoUsoVehiculo(@RequestBody TipoUso tipoUso){
+        tipoUsoService.insertarTipoUso(tipoUso);
     }
 }

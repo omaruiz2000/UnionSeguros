@@ -23,6 +23,12 @@ public class MetodoDePago {
     @Column(name = "nombre_metodo", length = 100)
     private String nombreMetodo;
 
+    @Column(name = "nombre_titular", length = 100)
+    private String nombreTitular;
+
+    @Column(name = "correo", length = 100)
+    private String correo;
+
     @Column(name = "numero_tarjeta", length = 30)
     private String numeroTarjeta;
 
@@ -34,6 +40,5 @@ public class MetodoDePago {
 
     @Column(name = "activo")
     private boolean activo;
-
 
 }

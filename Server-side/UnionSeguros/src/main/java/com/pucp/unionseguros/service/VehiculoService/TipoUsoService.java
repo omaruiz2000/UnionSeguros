@@ -21,4 +21,8 @@ public class TipoUsoService {
     public List<TipoUso> listarTipoUso(){
         return tipoUsoRepository.findAll();
     }
+
+    public void insertarTipoUso(TipoUso tipoUso){
+        tipoUsoRepository.save(tipoUso);
+    }
 }

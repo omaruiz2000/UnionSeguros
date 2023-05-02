@@ -14,6 +14,7 @@ import lombok.Setter;
 @Setter
 public class Provincia {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_provincia", nullable = false)
     private Integer id;
 
