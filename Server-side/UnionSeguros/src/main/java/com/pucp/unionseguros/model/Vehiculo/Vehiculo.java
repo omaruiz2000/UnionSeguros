@@ -17,6 +17,7 @@ import java.time.LocalDate;
 @Setter
 public class Vehiculo {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_vehiculo", nullable = false)
     private Integer id;
 
@@ -40,6 +41,9 @@ public class Vehiculo {
 
     @Column(name = "placa", length = 15)
     private String placa;
+
+    @Column(name = "serie", length = 15)
+    private String serie;
 
     @Column(name = "activo")
     private boolean activo;

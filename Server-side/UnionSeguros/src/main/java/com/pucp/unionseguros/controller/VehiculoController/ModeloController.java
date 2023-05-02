@@ -34,4 +34,9 @@ public class ModeloController {
     public List<Modelo> getModelosByIdMarca(@RequestParam(name = "idMarca") Integer idMarca){
         return modeloService.listarModelosPorMarcas(idMarca);
     }
+
+    @PostMapping()
+    public  void registrarNuevoModelo(@RequestBody Modelo modelo){
+        modeloService.insertarModelo(modelo);
+    }
 }

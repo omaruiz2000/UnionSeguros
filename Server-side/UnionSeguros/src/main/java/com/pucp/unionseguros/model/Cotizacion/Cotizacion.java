@@ -25,6 +25,10 @@ public class Cotizacion {
     @Column(name = "id_cotizacion", nullable = false)
     private Integer id;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "fid_moneda")
+    private Moneda fidMoneda;
+
     @Column(name = "fecha_cotizacion")
     private LocalDate fechaCotizacion;
 

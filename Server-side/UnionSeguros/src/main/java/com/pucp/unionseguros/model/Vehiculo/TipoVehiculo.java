@@ -14,6 +14,7 @@ import lombok.Setter;
 @Setter
 public class TipoVehiculo {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_tipo_vehiculo", nullable = false)
     private Integer idTipoVehiculo;
 

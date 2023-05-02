@@ -18,6 +18,7 @@ import java.util.Date;
 public class BoletaDeVenta{
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_boleta", nullable = false)
     private Integer id;
 
