@@ -11,6 +11,8 @@ var SOATRouter = require('./routes/SOAT');
 
 var app = express();
 
+global.URL = 'https://apimocha.com/unionseguros';
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

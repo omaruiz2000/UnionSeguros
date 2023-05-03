@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <%- include('../heads/SOAT'); %>
+    <meta charset="UTF-8">
+    <title>Página principal SOAT</title>
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link rel="stylesheet" href="public/stylesheets/SOAT.css">
 </head>
 
 <body class="container">
-    <header>
-        <%- include('../partials/SOATHeader'); %>
-    </header>
+    <%- include('../layout/SOATHeader'); %>
 
     <main>
-        <%- include('../partials/SOATMAIN'); %>
+        <%- include('../partials/SOAT'); %>
     </main>
 
-    <footer>
-        <%- include('../partials/SOATFooter'); %>
-    </footer>
+    <%- include('../layout/SOATFooter'); %>
+
 
 </html>

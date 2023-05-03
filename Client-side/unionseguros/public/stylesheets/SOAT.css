@@ -1,4 +1,7 @@
 /*COTIZA INICIO*/
+main {
+  height: 100%;
+}
 
 .main-cotiza{
     height: 50vh;

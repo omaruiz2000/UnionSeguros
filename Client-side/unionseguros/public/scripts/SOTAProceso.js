@@ -1,4 +1,19 @@
+
 var stage = 0;
+
+window.addEventListener('load', function() {
+    var url = global.URL + '/api/soat/vehiculo?placa='+localStorage.getItem("placa");
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => {
+        // Handle the error
+        console.error(error);
+      });
+  });
+
 
 document.querySelector("#advance").addEventListener("click", function () {
     if (stage == 3) {
