@@ -2,20 +2,19 @@
 <html>
 
 <head>
-    <%- include('../heads/SOATProceso'); %>
+    <meta charset="UTF-8">
+    <title>Comprar SOAT</title>
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link rel="stylesheet" href="public/stylesheets/SOATPROCESO.css">
 </head>
 
 <body class="container">
-    <header>
-        <%- include('../partials/SOATHeader'); %>
-    </header>
+    <%- include('../layout/SOATHeader'); %>
 
     <main>
-        <%- include('../partials/SOATProcesoFondo'); %>
+        <%- include('../partials/SOATProceso'); %>
     </main>
 
-    <footer>
-        <%- include('../partials/SOATFooter'); %>
-    </footer>
+    <%- include('../layout/SOATFooter'); %>
 
 </html>

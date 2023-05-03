@@ -84,20 +84,92 @@ h4{
 }
 
 
+/*FOOTER INICIO*/
+
+footer {
+  background-color: #041E42;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  margin-top: auto;
+}
+
+footer p, footer h3 {
+  color: white;
+  margin: 5px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.footer-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+
+}
+
+.columna {
+  text-align: center;
+  width: 200px;
+}
+
+
+.footer-redes img {
+  width: 32px;
+  height: 32px;
+  margin: 20px;
+}
+
+/*HEADER INICIO*/
 header {
-  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 350px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Calibri, sans-serif;
-  font-size: 12px;
- 
-  flex-direction: column;
+header .logo {
+  float: left;
+}
+
+header .logo img {
+  width: 100px;
+  height: auto;
+}
+
+header .telefono {
+  float: right;
+  display: flex;
+  align-items: center;
+  color: #C8102E;
+  text-decoration: none;
+}
+
+header .telefono img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
 }
