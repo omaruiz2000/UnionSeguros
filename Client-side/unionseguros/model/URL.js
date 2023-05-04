@@ -1,0 +1,1 @@
+const GLOBAL_URL  = "https://apimocha.com/unionseguros";

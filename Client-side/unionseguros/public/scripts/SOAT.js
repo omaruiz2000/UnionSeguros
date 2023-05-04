@@ -11,9 +11,22 @@ function toggleAnswer(answerId) {
     }
 }
 
+document.getElementById("select-documento").addEventListener("change", function () {
+    const selectedValue = this.value;
+    document.getElementById("txt-documento").disabled = false;
+    if (document.querySelector("#select-documento").value == "DNI") {
+        document.getElementById("txt-documento").maxLength = "8";
+    } else if (document.querySelector("#select-documento").value == "CE") {
+        document.getElementById("txt-documento").maxLength = "9";
+    } else if (document.querySelector("#select-documento").value == "RUC") {
+        document.getElementById("txt-documento").maxLength = "11";
+    }
+});
+
+
 document.querySelector("#cotizar").addEventListener("click", function () {
 
-    if (verificacion()){
+    if (verificacion()) {
         return;
     }
 
@@ -24,33 +37,38 @@ document.querySelector("#cotizar").addEventListener("click", function () {
     window.location.href = "/SOATPRoceso";
 });
 
-function verificacion(){
+function verificacion() {
     var placa = document.querySelector("#txt-placa").value;
     var documento = document.querySelector("#txt-documento").value;
     var tipoDocumento = document.querySelector("#select-documento").value;
 
 
-    if (documento == ""){
+    if (documento == "") {
         alert("Por favor ingrese el documento correcto.");
         return true;
-    }else{
-        if (tipoDocumento == "DNI" && (documento.length !== 8 || !/^[0-9]+$/.test(documento))){
-            alert("Por favor ingrese el documento correcto.");
-            return true;
-        }else if (tipoDocumento == "CE" && (documento.length !== 9 || !/^[0-9]+$/.test(documento))){
-            alert("Por favor ingrese el documento correcto.");
-            return true;
-        }else if (tipoDocumento == "RUC" && (documento.length !== 11 || !/^[0-9]+$/.test(documento))
-                  || (documento.substring(0, 2) !== "10" && documento.substring(0, 2) !== "20")){
-            alert("Por favor ingrese el documento correcto.");
-            return true;
+    } else {
+        if (tipoDocumento == "DNI") {
+            if (documento.length !== 8 || !/^[0-9]+$/.test(documento)){
+                alert("Por favor ingrese el documento correcto.");
+                return true;
+            }
+        } else if (tipoDocumento == "CE") {
+            if (documento.length !== 9 || !/^[0-9]+$/.test(documento)){
+                alert("Por favor ingrese el documento correcto.");
+                return true;
+            }
+        } else if (tipoDocumento == "RUC") {
+            if((documento.length !== 11 || !/^[0-9]+$/.test(documento)) || (documento.substring(0, 2) !== "10" && documento.substring(0, 2) !== "20")){
+                alert("Por favor ingrese el documento correcto.");
+                return true;
+            }
         }
     }
 
-    if (placa == "" || placa.length !== 6 || !/^[A-Za-z0-9]+$/.test(placa)){
+    if (placa == "" || placa.length !== 6 || !/^[A-Za-z0-9]+$/.test(placa)) {
         alert("Por favor ingrese la placa correcta.");
         return true;
-    }  
+    }
     return false
 }
 

@@ -42,14 +42,14 @@
                     <div class="info-vehi-form-line">
                         <div class="info-vehi-form-item">
                             <h3>Marca</h3>
-                            <select id = "txt-marca">
+                            <select id = "select-marca">
                                 <option value="" disabled selected>seleccione una marca</option>
                             </select>
                         </div>
 
                         <div class="info-vehi-form-item">
                             <h3>Modelo</h3>
-                            <select id = "txt-modelo">
+                            <select id = "select-modelo">
                                 <option value="" disabled selected>seleccione un modelo</option>
                             </select>
                         </div>
@@ -57,9 +57,7 @@
                     <div class="info-vehi-form-line">
                         <div class="info-vehi-form-item">
                             <h3>Numero de Asientos</h3>
-                            <select id = "txt-asientos">
-                                <option value="" disabled selected>seleccione un numero</option>
-                            </select>
+                            <input placeholder="Ingrese numero" id = "txt-asientos"></input>
                         </div>
                         <div class="info-vehi-form-item">
                             <h3>Año</h3>
@@ -71,31 +69,31 @@
 
                     <div class="info-vehi-form-item">
                         <h3>Serie</h3>
-                        <input placeholder="Ingrese Serie" id = "txt-serie"></input>
+                        <input placeholder="Ingrese Serie" id = "txt-serie" maxlength="17"></input>
                     </div>
                     <div class="info-vehi-form-item">
                         <h3>Uso</h3>
-                        <select>
+                        <select id = "select-uso">
                             <option value="" disabled selected>seleccione uno</option>
                         </select>
                     </div>
                     <div class="info-vehi-form-line">
                         <div class="info-vehi-form-item">
                             <h3>Apellido paterno</h3>
-                            <input placeholder="Ingrese apellido"></input>
+                            <input id = "txt-apdPaterno" placeholder="Ingrese apellido"></input>
                         </div>
                         <div class="info-vehi-form-item">
                             <h3>Apellido materno</h3>
-                            <input placeholder="Ingrese apellido"></input>
+                            <input id = "txt-apdMaterno" placeholder="Ingrese apellido"></input>
                         </div>
                     </div>
                     <div class="info-vehi-form-item">
                         <h3>Nombres</h3>
-                        <input placeholder="Ingrese nombres"></input>
+                        <input id = "txt-nombres" placeholder="Ingrese nombres"></input>
                     </div>
                     <div class="info-vehi-form-item">
                         <h3>Quiero mi SOAT apartir de ..</h3>
-                        <input   type="date" id="datepicker"></input>
+                        <input id = "dpFecha" type="date"></input>
                     </div>
                 </div>
             </div>
@@ -104,42 +102,12 @@
 
         <div class="div-plans content-cantainer-item">
             <div class="content-plan">
-                <div class="plan-soat">
-                    <h2>Soat AutoRenova</h2>
-                    <h1>S/.40</h1>
-                    <ul class="plan-soat-description">
-                        <li>Cobertura completa robos y choques.</li>
-                        <li>Descuento al 30% en Repsol y Primax.</li>
-                    </ul>
-                    <input type="radio" name="select-plan" class="button-red-whie-back"></input>
-                </div>
-                <div class="plan-soat">
-                    <h2>Soat Estándar</h2>
-                    <h1>S/.50</h1>
-                    <ul class="plan-soat-description">
-                        <li>Cobertura completa robos y choques.</li>
-                        <li>Descuento al 30% en Repsol y Primax.</li>
-                        <li>SOAT de acuerdo a la ley.</li>
-                    </ul>
-                    <input type="radio" name="select-plan" class="button-red-whie-back"></input>
-                </div>
-                <div class="plan-soat">
-                    <h2>Soat Plus</h2>
-                    <h1>S/.60</h1>
-                    <ul class="plan-soat-description">
-                        <li>Cobertura completa robos y choques.</li>
-                        <li>Descuento al 30% en Repsol y Primax.</li>
-                        <li>SOAT de acuerdo a la ley.</li>
-                        <li>Asistencia médica.</li>
-                    </ul>
-                    <input type="radio" name="select-plan" class="button-red-whie-back"></input>
-                </div>
             </div>
         </div>
 
         <div class="div-payment content-cantainer-item">
             <div class="info-vehi-form">
-
+                
                 <div class="card">
                     <div class="chip">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 230 384.4 300.4" width="38" height="70">
@@ -152,28 +120,39 @@
             </div>
 
             <div class="info-vehi-form">
+                <h2 id = "total-a-pagar">Total: S/.100</h2>
                 <div class="info-vehi-form-item">
                     <h3>Numero de tarjeta</h3>
-                    <input type="text" placeholder="1234-5678-1234-5678"></input>
+                    <input id = "txt-num-tarjeta" type="text" placeholder="1234-5678-1234-5678" maxlength="16"></input>
                 </div>
                 <div class="info-vehi-form-line">
                     <div class="info-vehi-form-item">
                         <h3>Fecha Vencimiento</h3>
-                        <input type="text" placeholder="MM/YY"></input>
+                        <input id = "txt-fecha-venc" type="text" placeholder="MM/YY"></input>
                     </div>
 
                     <div class="info-vehi-form-item">
-                        <h3>CVC</h3>
-                        <input type="text" placeholder="CVC"></input>
+                        <h3>CVV</h3>
+                        <input id = "txt-CVV" type="text" placeholder="CVV" maxlength="3"></input>
                     </div>
+
+                    <div class="info-vehi-form-item">
+                        <h3>Moneda</h3>
+                        <select id = "select-moneda">
+                            <option value="" disabled selected>seleccione una marca</option>
+                            <option value="1">Soles</option>
+                            <option value="2">Dolares</option>
+                        </select>
+                    </div>
+
                 </div>
                 <div class="info-vehi-form-item">
                     <h3>Nombre</h3>
-                    <input type="text" placeholder="Ingrese nombre completo"></input>
+                    <input id = "txt-tarjeta-nombre" type="text" placeholder="Ingrese nombre completo"></input>
                 </div>
                 <div class="info-vehi-form-item">
                     <h3>Email</h3>
-                    <input type="text" placeholder="Ingrese Email"></input>
+                    <input id = "txt-email" type="text" placeholder="Ingrese Email"></input>
                 </div>
             </div>
 
@@ -190,23 +169,23 @@
                 <h2>Resumen SOAT</h2>
 
                     <h3>Nombre Completo</h3>
-                    <p>Jimmy Chan Rojas</p>
+                    <p id = "txt-res-nombre">Jimmy Chan Rojas</p>
                 
                 
                     <h3>Placa</h3>
-                    <p>ABC-123</p>
+                    <p id = "txt-res-placa">ABC-123</p>
                 
                 
                     <h3>Plan SOAT</h3>
-                    <p>SOAT Plus</p>
+                    <p id = "txt-res-plan">SOAT Plus</p>
                 
                 
                     <h3>Pago Total</h3>
-                    <p>S/. 69.90</p>
+                    <p id = "txt-res-total">S/. 69.90</p>
                 
                 
                     <h3>Periodo</h3>
-                    <p>03/04/2023 - 03/04/2024</p>
+                    <p id = "txt-res-preiodo">03/04/2023 - 03/04/2024</p>
                 
             </div>
         </div>
