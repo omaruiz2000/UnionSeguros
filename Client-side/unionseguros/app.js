@@ -8,6 +8,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var SOATProcesoRouter = require('./routes/SOATProceso');
 var SOATRouter = require('./routes/SOAT');
+var adminPlanSOATRouter = require('./routes/adminPlanSOAT');
+var adminDetallePlanSOATRouter = require('./routes/adminDetallePlanSOAT');
 
 var app = express();
 
@@ -25,16 +27,18 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/SOATProceso', SOATProcesoRouter);
 app.use('/public', express.static('public'));
-app.use('/soat', SOATRouter)
 app.use('/SOAT', SOATRouter)
 
+app.use('/admin/planSOAT', adminPlanSOATRouter);
+app.use('/admin/detallePlanSOAT', adminDetallePlanSOATRouter);
+
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

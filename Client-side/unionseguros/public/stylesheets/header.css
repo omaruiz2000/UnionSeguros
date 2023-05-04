@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    object-fit: contain;
+}
+
+.navbar-button-list{
+    margin-left: 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #041E42;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 2em;
+}
+
+.hover-trigger {
+    position: relative;
+}
+
+.hover-trigger .button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar-button-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5em;
+}
+
+.button-icon {
+    align-items: center;
+    height: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.hover-content {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding-bottom: 20px;
+}
+
+
+.hover-content-container {
+    margin: 0 auto;
+    padding-left: 100px;
+}
+
+#list-container {
+    width: auto;
+}
+
+#menu-option-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu-option-list a {
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#search-result a{
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#search-container{
+    margin-top: 30px;
+}
+
+.search-box {
+    border: none;
+    border-bottom: 2px solid white;
+    color: rgba(255, 255, 255, 0.712) ;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    margin: 10px;
+  }
+
+.search-bar{
+    display: flex;
+
+}
+
+.search-bar img{
+    width: 30px;
+}
+
+#search-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    list-style-type: none;
+    padding: 0;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+#search-result li {
+    margin: 5px;
+}
+
+#user-container{
+    display: none;
+}
+
+#user-button{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+#username{
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+}

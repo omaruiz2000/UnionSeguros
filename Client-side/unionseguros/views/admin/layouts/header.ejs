@@ -1,0 +1,70 @@
+<header>
+    <nav class="navbar">
+        <div></div>
+        <div class="navbar-content">
+    
+            <a class="navbar-logo">
+                <img src="../public/resources/logos/logo-blue-back.png" alt="Logo">
+            </a>
+    
+            <div class="hover-trigger" id="b-ventas">
+                <a class="button" href="/admin/ventas">Ventas</a>
+            </div>
+    
+            <div class="hover-trigger" id="b-clientes">
+                <a class="button" href="#">Clientes</a>
+            </div>
+    
+            <div class="hover-trigger" id="b-seguros">
+                <a class="button" href="/admin/seguros">Seguros</a>
+            </div>
+    
+            <div class="hover-trigger" id="b-usuarios">
+                <a class="button" href="#">Usuarios</a>
+            </div>
+    
+            <div class="hover-trigger" id="b-vehiculos">
+                <a class="button" href="#">Vehiculos</a>
+            </div>
+    
+            <div class="navbar-button-list" >
+                <button class="button button-icon" id="search-button">
+                    <img src="../public/resources/icons/Magnify.png" alt="Buscar">
+                  </button>
+                  <button class="button button-icon" id="user-button">
+                    <img src="../public/resources/icons/Human.png" alt="Usuario">
+                  </button>
+            </div>
+    
+        </div>
+        <div></div>
+    </nav>
+    
+    <div class="hover-content">
+        <div class="hover-content-container"> 
+            <div id = "list-container">
+                <ul id = "menu-option-list">
+                </ul>
+            </div>
+            <div id = "search-container">
+                <div class="search-bar">
+                    <img src="../public/resources/icons/Magnify.png" alt="Buscar">
+                    <input type="text" class="search-box" placeholder="Buscar">
+                </div>
+                <div>
+                    <ul id = "search-result">
+                    </ul>
+                </div>
+            </div>
+            <div id = "user-container">
+                <p id = "username">Usuario</p>
+                <a id="user-button" href="/login">
+                    Salir
+                </a>
+            </div>
+        </div>
+    
+    </div>
+    <script src="../public/scripts/header.js"></script>
+    
+</header>
