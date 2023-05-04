@@ -15,16 +15,8 @@ import java.util.Date;
 @Getter
 @Setter
 @AllArgsConstructor
-public class Cliente {
-
-    @Id
-    @Column(name = "id_usuario", nullable = false)
-    private Integer id;
-
-    @MapsId
-    @OneToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "id_usuario", nullable = false)
-    private Usuario usuario;
+@PrimaryKeyJoinColumn(name = "id_persona")
+public class Cliente extends Usuario{
 
     @Column(name = "activo")
     private boolean activo;
@@ -32,7 +24,7 @@ public class Cliente {
     @Column(name = "baneado")
     private boolean baneado;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_roles")
     private Roles fidRoles;
 

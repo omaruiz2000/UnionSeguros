@@ -20,12 +20,12 @@ public class MetodoDePagoController {
         this.metodoDePagoService = metodoDePagoService;
     }
 
-    @GetMapping()
+    @GetMapping("/listarTodos")
     public List<MetodoDePago> listarMetodoDePagos(){
         return metodoDePagoService.listarMetododePagos();
     }
 
-    @PostMapping()
+    @PostMapping("/insertar")
     public void insertarNuevoMetodoDePago(@RequestBody MetodoDePago metodoDePago){
         metodoDePagoService.insertarMetodoDePago(metodoDePago);
     }

@@ -19,13 +19,18 @@ public class BoletaDeVentaController {
         this.boletaDeVentaService = boletaDeVentaService;
     }
 
-    @GetMapping()
+    @GetMapping("/listarTodas")
     public List<BoletaDeVenta> listarBoletasDeVenta(){
         return boletaDeVentaService.listarBoletaDeVenta();
     }
 
-    @PostMapping()
+    @GetMapping("/listarActivas")
+    public List<BoletaDeVenta> listarBoletasDeVentaActivas(){
+        return  boletaDeVentaService.listarBoletasDeVentaActivas();
+    }
+    @PostMapping("/insertar")
     public void insertarNuevaBoletaDeVenta(@RequestBody BoletaDeVenta boletaDeVenta){
         boletaDeVentaService.insertarBoletaDeVenta(boletaDeVenta);
     }
+
 }

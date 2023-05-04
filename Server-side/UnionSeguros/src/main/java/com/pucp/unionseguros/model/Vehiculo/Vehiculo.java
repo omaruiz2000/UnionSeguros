@@ -21,15 +21,15 @@ public class Vehiculo {
     @Column(name = "id_vehiculo", nullable = false)
     private Integer id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_tipo_uso")
     private TipoUso fidTipoUso;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_modelo")
     private Modelo fidModelo;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_persona")
     private Persona fidPersona;
 

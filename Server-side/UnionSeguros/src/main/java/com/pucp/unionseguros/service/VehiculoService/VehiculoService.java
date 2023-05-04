@@ -21,5 +21,11 @@ public class VehiculoService {
 
     public void insertarVehiculo(Vehiculo vehiculo) {
         vehiculoRepository.save(vehiculo);
+
+    }
+    public Vehiculo buscarVehiculoConPlaca(String placaIngrese){
+        Vehiculo founVehiculo = null;
+        founVehiculo =vehiculoRepository.findVehiculoByPlaca(placaIngrese);
+        return founVehiculo;
     }
 }

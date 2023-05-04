@@ -20,15 +20,17 @@ public class TipoDocumentoController {
         this.tipoDocumentoService = tipoDocumentoService;
     }
 
+    @GetMapping("/listarTodos")
+    public List<TipoDocumento> listarTiposDocumentos(){
+        return tipoDocumentoService.listarTipoDocumentos();
+    }
 
+    @GetMapping("/listarActivos")
+    public  List<TipoDocumento> listarTiposDocumentosActivos(){
+        return  tipoDocumentoService.listarTipoDocumentoActivos();
+    }
 
-//    @GetMapping
-//    public List<TipoDocumento> getTiposDocumentos(){
-//        return tipoDocumentoService.listarTipoDocumentos();
-//    }
-
-
-    @PostMapping
+    @PostMapping("/insertar")
     public void insertarNuevoTipoDocumento(@RequestBody TipoDocumento tipoDocumento){
         tipoDocumentoService.insertarTipoDocumento(tipoDocumento);
     }

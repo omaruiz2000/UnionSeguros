@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -25,4 +26,27 @@ public class TipoUsoService {
     public void insertarTipoUso(TipoUso tipoUso){
         tipoUsoRepository.save(tipoUso);
     }
+
+    public List<TipoUso> listarTipoUsoActivo(){
+        List<TipoUso> lista = new ArrayList<>();
+        lista = tipoUsoRepository.findTipoUsosByActivoIsTrue();
+        return  lista;
+    }
+
+    public TipoUso updateTipoUso(TipoUso tipoUso){
+        TipoUso foundTipoUso = tipoUsoRepository.findTipoUsoByIdTipoUsoAndActivoIsTrue(tipoUso.getIdTipoUso());
+        foundTipoUso.setIdTipoUso(tipoUso.getIdTipoUso());
+        foundTipoUso.setNombreTipoUso(tipoUso.getNombreTipoUso());
+        foundTipoUso.setActivo(tipoUso.isActivo());
+        return tipoUsoRepository.save(foundTipoUso);
+    }
+
+    public TipoUso deleteTipoUso(TipoUso tipoUso){
+        TipoUso foundTipoUso = tipoUsoRepository.findTipoUsoByIdTipoUsoAndActivoIsTrue(tipoUso.getIdTipoUso());
+        foundTipoUso.setIdTipoUso(tipoUso.getIdTipoUso());
+        foundTipoUso.setNombreTipoUso(tipoUso.getNombreTipoUso());
+        foundTipoUso.setActivo(false);
+        return tipoUsoRepository.save(foundTipoUso);
+    }
+
 }

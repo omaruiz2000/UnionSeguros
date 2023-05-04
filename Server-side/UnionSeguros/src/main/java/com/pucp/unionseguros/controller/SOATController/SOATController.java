@@ -21,12 +21,12 @@ public class SOATController {
         this.soatService = soatService;
     }
 
-    @GetMapping()
+    @GetMapping("/listarTodas")
     public List<SOAT> listarSOATs(){
         return soatService.listarSOAT();
     }
 
-    @PostMapping
+    @PostMapping("/insertar")
     public void insertarNuevoSOAT(@RequestBody SOAT soat){
         soatService.insertarSOAT(soat);
     }

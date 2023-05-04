@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface VehiculoRepository extends JpaRepository<Vehiculo,Integer> {
 
-
+    public Vehiculo findVehiculoByPlaca(String placaIngresada);
 }

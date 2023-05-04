@@ -24,7 +24,7 @@ public class Distrito {
     @Column(name = "activo")
     private boolean activo;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_provincia")
     private Provincia fidProvincia;
 

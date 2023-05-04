@@ -25,19 +25,19 @@ public class Poliza {
     @Column(name = "id_poliza", nullable = false)
     private Integer id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_moneda")
     private Moneda fidMoneda;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_metodo")
     private MetodoDePago fidMetodo;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_vehiculo")
     private Vehiculo fidVehiculo;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_cliente")
     private Cliente fidCliente;
 
