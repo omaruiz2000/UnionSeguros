@@ -1,7 +1,13 @@
-const GLOBAL_URL = 'https://apimocha.com/unionseguros';
+// const GLOBAL_URL = 'https://apimocha.com/unionseguros';
+const GLOBAL_URL = 'http://localhost:8080/api/v1';
+
 var stage = 0;
 
 window.onload = function () {
+    localStorage.setItem("idCliente", 0);
+    localStorage.setItem("idVehiculo", 0);
+
+
     document.querySelector("#dpFecha").value = new Date().toISOString().split("T")[0];
 
     const today = new Date();
@@ -9,58 +15,97 @@ window.onload = function () {
     document.querySelector("#dpFecha").min = today.toISOString().split("T")[0];
 
     //vehiculo
+    fetch(GLOBAL_URL + '/marcaVehiculo/listarTodas')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(element => {
+                var _option = document.createElement("option");
+                _option.value = element.id;
+                _option.text = element.marca;
+                document.querySelector("#select-marca").appendChild(_option);
+            });
+        }).catch(error => {
+            // Handle the error
+            console.error(error);
+        });
+
+    document.querySelector("#select-marca").addEventListener("change", function () {
+        document.querySelector("#select-modelo").innerHTML = "";
+        fetch(GLOBAL_URL + '/modelo/listarModelosPorIdMarca?idMarca=' + document.querySelector("#select-marca").value)
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(element => {
+                    var _option = document.createElement("option");
+                    _option.value = element.id;
+                    _option.text = element.modelo;
+                    document.querySelector("#select-modelo").appendChild(_option);
+                });
+            }).catch(error => {
+                // Handle the error
+                console.error(error);
+            });
+    });
+
+    const select = document.getElementById('select-anio');
+
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+
+    // Generate options for years from 1980 to current year + 1
+    for (let i = currentYear + 1; i >= 1980; i--) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.textContent = i;
+        select.appendChild(option);
+    }
+
+    const usos = [
+        { id: 1, nombre: "Particular" },
+        { id: 2, nombre: "Taxi" },
+        { id: 5, nombre: "Carga" },
+    ]
+    usos.forEach(element => {
+        var _option = document.createElement("option");
+        _option.value = element.id;
+        _option.text = element.nombre;
+        document.querySelector("#select-uso").appendChild(_option);
+    });
+
     fetch(GLOBAL_URL + '/vehiculo/buscarVehiculoPorPlaca?placaIngresada=' + localStorage.getItem("placa"))
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            localStorage.setItem("vehiculo", data);
+            localStorage.setItem("idVehiculo", data.id);
             // marca
+
             if (data.fidModelo.fidMarcaVehiculo != "") {
-                var _option = document.createElement("option");
-                _option.value = data.fidModelo.fidMarcaVehiculo.id;
-                _option.text = data.fidModelo.fidMarcaVehiculo.marca;
-                document.querySelector("#select-marca").appendChild(_option);
                 document.querySelector("#select-marca").disabled = true;
                 document.querySelector("#select-marca").value = data.fidModelo.fidMarcaVehiculo.id;
-            } else {
-                fetch(GLOBAL_URL + '/marcaVehiculo/listarTodas')
-                    .then(response => response.json())
-                    .then(data => {
-                        data.forEach(element => {
-                            var _option = document.createElement("option");
-                            _option.value = element.id;
-                            _option.text = element.marca;
-                            document.querySelector("#select-marca").appendChild(_option);
-                        });
-                    }).catch(error => {
-                        // Handle the error
-                        console.error(error);
-                    });
             }
+            document.querySelector("#select-modelo").innerHTML = "";
+            fetch(GLOBAL_URL + '/modelo/listarModelosPorIdMarca?idMarca=' + data.fidModelo.fidMarcaVehiculo.id)
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(element => {
+                        var _option = document.createElement("option");
+                        _option.value = element.id;
+                        _option.text = element.modelo;
+                        document.querySelector("#select-modelo").appendChild(_option);
+                    });
+
+                    if (data.fidModelo != "") {
+                        document.querySelector("#select-modelo").disabled = true;
+                        document.querySelector("#select-modelo").value = data.fidModelo.id;
+                    }
+                }).catch(error => {
+                    // Handle the error
+                    console.error(error);
+                });
+
 
             // modelos
-            if (data.fidModelo != "") {
-                var _option = document.createElement("option");
-                _option.value = data.fidModelo.id;
-                _option.text = data.fidModelo.modelo;
-                document.querySelector("#select-modelo").appendChild(_option);
-                document.querySelector("#select-modelo").disabled = true;
-                document.querySelector("#select-modelo").value = data.fidModelo.id;
-            } else {
-                fetch(GLOBAL_URL + '/modelo/listarModelosPorIdMarca?idMarca=' + document.querySelector("#select-marca").value)
-                    .then(response => response.json())
-                    .then(data => {
-                        data.forEach(element => {
-                            var _option = document.createElement("option");
-                            _option.value = element.id;
-                            _option.text = element.modelo;
-                            document.querySelector("#select-modelo").appendChild(_option);
-                        });
-                    }).catch(error => {
-                        // Handle the error
-                        console.error(error);
-                    });
-            }
+
+
 
             // numero de asientos
             document.querySelector("#txt-asientos").value = data.numeroAsientos;
@@ -70,43 +115,15 @@ window.onload = function () {
 
             // anio
             if ((data.anhoFabricacion).substring(0, 4) != "") {
-                var _option = document.createElement("option");
-                _option.value = (data.anhoFabricacion).substring(0, 4);
-                _option.text = (data.anhoFabricacion).substring(0, 4);
-                document.querySelector("#select-anio").appendChild(_option);
                 document.querySelector("#select-anio").disabled = true;
                 document.querySelector("#select-anio").value = (data.anhoFabricacion).substring(0, 4);
-            } else {
-                const select = document.getElementById('year-select');
-
-                // Get the current year
-                const currentYear = new Date().getFullYear();
-
-                // Generate options for years from 1980 to current year + 1
-                for (let i = currentYear + 1; i >= 1980; i--) {
-                    const option = document.createElement('option');
-                    option.value = i;
-                    option.textContent = i;
-                    select.appendChild(option);
-                }
             }
-
             //serie
             document.querySelector("#txt-serie").value = data.serie;
             if (data.serie != "") {
                 document.querySelector("#txt-serie").disabled = true;
             }
-            const usos = [
-                { id: 1, nombre: "Particular" },
-                { id: 2, nombre: "Taxi" },
-                { id: 5, nombre: "Carga" },
-            ]
-            usos.forEach(element => {
-                var _option = document.createElement("option");
-                _option.value = element.id;
-                _option.text = element.nombre;
-                document.querySelector("#select-uso").appendChild(_option);
-            });
+
             //uso
             if (data.fidTipoUso != "") {
                 document.querySelector("#select-uso").value = data.fidTipoUso.idTipoUso;
@@ -121,7 +138,7 @@ window.onload = function () {
     fetch(GLOBAL_URL + '/cliente/buscarClientePorNumDocumento?numDocumentoIngresado=' + localStorage.getItem("documento"))
         .then(response => response.json())
         .then(data => {
-            localStorage.setItem("cliente", data);
+            localStorage.setItem("idCliente", data.id);
             document.querySelector("#txt-apdPaterno").value = data.apellidoPaterno;
             if (data.serie != "") {
                 document.querySelector("#txt-apdPaterno").disabled = true;
@@ -245,8 +262,8 @@ function changeStage() {
             document.querySelector(".div-result").style.display = "block";
             document.querySelector("#descargarConstancia").style.display = "block";
             document.querySelector("#previous").style.display = "none";
-            loadResumen();
             guardar();
+            loadResumen();
             break;
     }
 }
@@ -452,84 +469,141 @@ function guardar() {
     const nombreTitular = document.querySelector("#txt-tarjeta-nombre").value;
     const email = document.querySelector("#txt-email").value;
     const moneda = document.querySelector("#select-moneda").value;
-    const today = new Date();
-    const yyyy = today.getFullYear();
-    const mm = String(today.getMonth() + 1).padStart(2, '0');
-    const dd = String(today.getDate()).padStart(2, '0');
+    const dateParts = fecha.split('-');
+    const yyyy = dateParts[0];
+    const mm = dateParts[1];
+    const dd = dateParts[2];
     const formattedDate = `${yyyy}-${mm}-${dd}`;
 
-    const infoCliente = {
-        "nombre": nombres,
-        "apellidoPaterno": apdPaterno,
-        "apellidoMaterno": apdMaterno,
-        "numeroDocumento": localStorage.getItem("documento"),
-        "activo": true,
-        "fidTipoDocumento": {
-            "id": localStorage.getItem("tipoDocumento")
-        },
-        "fechaCreacion": formattedDate,
-        "baneado": false,
-        "fidRoles": {
-            "idRole": 1,
-            "fidPermisos": {
-                "id": 1
-            }
-        }
 
-    };
+    const [month, year] = fechaVencimiento.split('/');
 
-    fetch(GLOBAL_URL + '/cliente/ingresar', {
-        method: 'POST',
-        body: JSON.stringify(infoCliente),
-        headers: {
-            'Content-Type': 'application/json'
-        },
-    })
-        .then(response => response.json())
-        .then(element => {
-            if (element) {
-
-            } else {
-                alert("No se ha podido guardar");
-                return;
-            }
-        })
-        .catch(error => {
-            // Handle the error
-            console.error(error);
-        });
+    const date = `${20+year}-${month}-01`;
 
     var idUsuario;
-    fetch(GLOBAL_URL + '/cliente/buscarClientePorNumDocumento?numDocumentoIngresado=' + localStorage.getItem("documento"))
-        .then(response => response.json())
-        .then(element => {
-            idUsuario = element.id
-        })
-        .catch(error => {
-            // Handle the error
-            console.error(error);
-        });
+    if (localStorage.getItem('idCliente') == 0) {
+        const infoCliente = {
+            "nombre": nombres,
+            "apellidoPaterno": apdPaterno,
+            "apellidoMaterno": apdMaterno,
+            "numeroDocumento": localStorage.getItem("documento"),
+            "activo": true,
+            "fidTipoDocumento": {
+                "id": localStorage.getItem("tipoDocumento")
+            },
+            "fechaCreacion": formattedDate,
+            "baneado": false,
+            "fidRoles": {
+                "idRole": 1,
+                "fidPermisos": {
+                    "id": 1
+                }
+            }
 
-    const infoVehiculo = {
-        "fidTipoUso": {
-            "idTipoUso": uso
-        },
-        "fidModelo": {
-            "id": modelo
-        },
-        "fidPersona": {
-            "id": idUsuario
-        },
-        "anhoFabricacion": anio + "-01-01",
-        "numeroAsientos": numAsiento,
-        "placa": localStorage.getItem("placa"),
-        "serie": numSerie,
+        };
+
+        fetch(GLOBAL_URL + '/cliente/ingresar', {
+            method: 'POST',
+            body: JSON.stringify(infoCliente),
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+            .then(response => response.json())
+            .then(element => {
+                if (element) {
+
+                } else {
+                    alert("No se ha podido guardar");
+                    return;
+                }
+            })
+            .catch(error => {
+                // Handle the error
+                console.error(error);
+            });
+
+
+        fetch(GLOBAL_URL + '/cliente/buscarClientePorNumDocumento?numDocumentoIngresado=' + localStorage.getItem("documento"))
+            .then(response => response.json())
+            .then(element => {
+                idUsuario = element.id
+            })
+            .catch(error => {
+                // Handle the error
+                console.error(error);
+            });
+    } else {
+        idUsuario = localStorage.getItem('idCliente');
+    }
+
+    var idVehiculo;
+    if (localStorage.getItem('idVehiculo') == 0) {
+        const infoVehiculo = {
+            "fidTipoUso": {
+                "idTipoUso": uso
+            },
+            "fidModelo": {
+                "id": modelo
+            },
+            "fidPersona": {
+                "id": idUsuario
+            },
+            "anhoFabricacion": anio + "-01-01",
+            "numeroAsientos": numAsiento,
+            "placa": localStorage.getItem("placa"),
+            "serie": numSerie,
+            "activo": true
+        }
+
+        fetch(GLOBAL_URL + '/vehiculo/insertar', {
+            method: 'POST',
+            body: JSON.stringify(infoVehiculo),
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+            .then(response => response.json())
+            .then(element => {
+                if (element) {
+
+                } else {
+                    alert("No se ha podido guardar");
+                    return;
+                }
+            })
+            .catch(error => {
+                // Handle the error
+                console.error(error);
+            });
+
+
+        fetch(GLOBAL_URL + '/vehiculo/buscarVehiculoPorPlaca?placaIngresada=' + localStorage.getItem("placa"))
+            .then(response => response.json())
+            .then(data => {
+                idVehiculo = data.id
+            })
+            .catch(error => {
+                // Handle the error
+                console.error(error);
+            });
+    } else {
+        idVehiculo = localStorage.getItem('idVehiculo');
+    }
+
+    const infoTarejta = {
+        "nombreMetodo": "VISA",
+        "nombreTitular": nombreTitular,
+        "correo": email,
+        "numeroTarjeta": numTarjeta,
+        "cvv": cvv,
+        "fechaVencimiento": date,
         "activo": true
     }
 
-    fetch(GLOBAL_URL + '/vehiculo/insertar', {
+    fetch(GLOBAL_URL + '/metodoDePago/insertar', {
         method: 'POST',
-        body: JSON.stringify(infoVehiculo),
+        body: JSON.stringify(infoTarejta),
         headers: {
             'Content-Type': 'application/json'
         },
@@ -543,22 +617,6 @@ function guardar() {
                 return;
             }
         })
-        .catch(error => {
-            // Handle the error
-            console.error(error);
-        });
-
-    var idVehiculo;
-    fetch(GLOBAL_URL + '/vehiculo/buscarVehiculoPorPlaca?placaIngresada=' + localStorage.getItem("placa"))
-        .then(response => response.json())
-        .then(data => {
-            idVehiculo = data.id
-        })
-        .catch(error => {
-            // Handle the error
-            console.error(error);
-        });
-
 
     const infoPoliza = {
         "fidMoneda": {
@@ -573,9 +631,9 @@ function guardar() {
         "fidCliente": {
             "id": idUsuario
         },
-        "precioBase": "",
-        "fechaVigenciaDesde": "2023-05-04",
-        "fechaVigenciaFin": "2024-05-04",
+        "precioBase": document.querySelector('input[name="select-plan"]:checked').parentElement.querySelector('h1').innerText.slice(2),
+        "fechaVigenciaDesde": formattedDate,
+        "fechaVigenciaFin": `${parseInt(yyyy)+1}-${mm}-${dd}`,
         "activo": true
     }
 

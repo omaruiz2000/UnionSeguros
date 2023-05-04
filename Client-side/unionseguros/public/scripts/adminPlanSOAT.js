@@ -1,7 +1,10 @@
-const GLOBAL_URL = 'https://apimocha.com/unionseguros';
+//const GLOBAL_URL = 'https://apimocha.com/unionseguros';
+const GLOBAL_URL = 'http://localhost:8080/api/v1';   
+
+
 var planes;
 window.onload = function () {
-    fetch(GLOBAL_URL + '/planSOAT/listarActivos')
+    fetch(GLOBAL_URL + '/planSOAT/ListarTodos')
         .then(response => response.json())
         .then(data => {
             
@@ -193,8 +196,9 @@ function crearLaTabla(data){
 
         table.appendChild(tableRow);
     });
-
-    document.querySelector('.btn-edit').addEventListener('click', function () {
+    const btnEdits = document.querySelectorAll('.btn-edit');
+    btnEdits.forEach(btn => {
+        btn.addEventListener('click', function () {
         const plan = {
             "id": document.querySelector('.btn-edit').parentElement.parentElement.querySelector('.td-id').innerText,
             "nombrePlan": document.querySelector('.btn-edit').parentElement.parentElement.querySelector('.td-nombre').innerText,
@@ -210,4 +214,5 @@ function crearLaTabla(data){
 
         window.location.href = '/admin/detallePlanSOAT';
     });
+});
 }
