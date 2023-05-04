@@ -1,0 +1,20 @@
+#tabla-plan-soat{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+tr{
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.btn-edit{
+    background-color: #FFC107;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #000;
+    font-weight: bold;
+}
+
