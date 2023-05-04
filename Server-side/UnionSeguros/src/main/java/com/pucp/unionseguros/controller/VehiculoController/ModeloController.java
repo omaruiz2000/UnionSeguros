@@ -20,22 +20,22 @@ public class ModeloController {
         this.modeloService = modeloService;
     }
 
-    @GetMapping
-    public List<Modelo> getModelos(){
-        return modeloService.listarModelo();
-    }
+//    @GetMapping
+//    public List<Modelo> getModelos(){
+//        return modeloService.listarModelo();
+//    }
 
 //    @GetMapping(path = "/{idMarca}")
 //    public List<Modelo> getModelosByIdMarca(@PathVariable(name = "idMarca") Integer idMarca){
 //        return modeloService.listarModelosPorMarcas(idMarca);
 //    }
 
-    @GetMapping(params = "idMarca")
+    @GetMapping(params = "idMarca",path = "/listarModelosPorIdMarca")
     public List<Modelo> getModelosByIdMarca(@RequestParam(name = "idMarca") Integer idMarca){
         return modeloService.listarModelosPorMarcas(idMarca);
     }
 
-    @PostMapping()
+    @PostMapping("/insertar")
     public  void registrarNuevoModelo(@RequestBody Modelo modelo){
         modeloService.insertarModelo(modelo);
     }

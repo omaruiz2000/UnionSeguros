@@ -20,13 +20,27 @@ public class TipoUsoController {
         this.tipoUsoService = tipoUsoService;
     }
 
-    @GetMapping
-    public List<TipoUso> getTipoUsos(){
+    @GetMapping("/listarTodos")
+    public List<TipoUso> listTipoUsos(){
        return tipoUsoService.listarTipoUso();
     }
 
-    @PostMapping()
+    @GetMapping("/listarActivos")
+    public List<TipoUso> listarTipoUsosActivos(){
+        return tipoUsoService.listarTipoUsoActivo();
+    }
+    @PostMapping("/insertar")
     public void registrarNuevoTipoUsoVehiculo(@RequestBody TipoUso tipoUso){
         tipoUsoService.insertarTipoUso(tipoUso);
+    }
+
+    @PutMapping("/modificar")
+    public TipoUso modificarTipoUso(@RequestBody TipoUso tipoUso){
+        return tipoUsoService.updateTipoUso(tipoUso);
+    }
+
+    @PutMapping("/eliminar")
+    public TipoUso eliminarTipoUso(@RequestBody TipoUso tipoUso){
+        return tipoUsoService.deleteTipoUso(tipoUso);
     }
 }

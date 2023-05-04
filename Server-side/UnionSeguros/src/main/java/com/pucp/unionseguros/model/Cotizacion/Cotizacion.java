@@ -25,7 +25,7 @@ public class Cotizacion {
     @Column(name = "id_cotizacion", nullable = false)
     private Integer id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_moneda")
     private Moneda fidMoneda;
 
@@ -38,7 +38,7 @@ public class Cotizacion {
     @Column(name = "activo")
     private boolean activo;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_distrito")
     private Distrito fidDistrito;
 

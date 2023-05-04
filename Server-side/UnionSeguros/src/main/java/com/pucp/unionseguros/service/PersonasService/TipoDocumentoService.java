@@ -5,6 +5,7 @@ import com.pucp.unionseguros.repository.PersonasRepository.TipoDocumentoReposito
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -22,5 +23,11 @@ public class TipoDocumentoService {
 
     public void insertarTipoDocumento(TipoDocumento tipoDocumento){
         tipoDocumentoRepository.save(tipoDocumento);
+    }
+
+    public List<TipoDocumento> listarTipoDocumentoActivos(){
+        List<TipoDocumento> lista = new ArrayList<>();
+        lista = tipoDocumentoRepository.findTipoDocumentoByActivoIsTrue();
+        return lista;
     }
 }

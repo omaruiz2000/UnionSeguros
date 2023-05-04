@@ -21,14 +21,14 @@ public class Administrador {
     private Integer idUsuario;
 
     @MapsId
-    @OneToOne(fetch = FetchType.LAZY, optional = false)
+    @OneToOne
     @JoinColumn(name = "id_usuario", nullable = false)
     private Usuario usuario;
 
     @Column(name = "activo")
     private boolean activo;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_roles")
     private Roles fidRoles;
 }

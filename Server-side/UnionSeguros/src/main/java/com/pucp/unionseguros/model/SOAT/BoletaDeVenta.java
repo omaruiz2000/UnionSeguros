@@ -22,7 +22,7 @@ public class BoletaDeVenta{
     @Column(name = "id_boleta", nullable = false)
     private Integer id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_soat")
     private SOAT fidSoat;
 

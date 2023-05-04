@@ -23,4 +23,8 @@ public class MarcaVehiculoService {
     public void insertarMarcaVehiculo(MarcaVehiculo marcaVehiculo){
         marcaVehiculoRepository.save(marcaVehiculo);
     }
+
+    public MarcaVehiculo buscarMarcaConElId(Integer idMarca){
+        return marcaVehiculoRepository.findMarcaVehiculoById(idMarca);
+    }
 }

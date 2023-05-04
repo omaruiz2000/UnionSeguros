@@ -25,11 +25,11 @@ public class SOAT {
     @Column(name = "id_soat", nullable = false)
     private Integer id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_plan_soat")
     private PlanSOAT fidPlanSoat;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "fid_poliza")
     private Poliza fidPoliza;
 

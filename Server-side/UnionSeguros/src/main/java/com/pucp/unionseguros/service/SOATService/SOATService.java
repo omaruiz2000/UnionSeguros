@@ -16,9 +16,7 @@ public class SOATService {
         this.soatRepository = soatRepository;
     }
 
-    public List<SOAT> listarSOAT(){
-        return  soatRepository.findAll();
-    }
+    public List<SOAT> listarSOAT(){return  soatRepository.findAll();}
 
     public void insertarSOAT(SOAT soat) {
         soatRepository.save(soat);

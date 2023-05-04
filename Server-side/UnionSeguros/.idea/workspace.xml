@@ -5,72 +5,114 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e535dd-9087-49b2-b16f-1aee167975e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Cotizacion/Moneda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/VehiculoService/TipoVehiculoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/PersonasController/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/PersonasController/PermisosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/PersonasController/RolesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/PersonasController/UsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/DistritosRepository/DistritoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/DistritosRepository/ProvinciaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/PersonasRepository/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/PersonasRepository/PermisosRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/PersonasRepository/RolesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/PersonasRepository/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/PersonasService/ClienteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/PersonasService/PermisosService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/PersonasService/PersonaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/PersonasService/RolesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/PersonasService/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/94bd93f7-1223-44d7-b999-1bc47fda4d19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/94bd93f7-1223-44d7-b999-1bc47fda4d19.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/SOATController/CoberturaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/UnionSegurosApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/UnionSegurosApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/PersonasController/PersonaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/PersonasController/PersonaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/PersonasController/TipoDocumentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/PersonasController/TipoDocumentoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/SOATController/BoletaDeVentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/SOATController/BoletaDeVentaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/SOATController/MetodoDePagoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/SOATController/MetodoDePagoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/SOATController/PlanSOATController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/SOATController/PlanSOATController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/SOATController/PolizaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/SOATController/PolizaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/SOATController/SOATController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/SOATController/SOATController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/VehiculoController/MarcaVehiculoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/VehiculoController/MarcaVehiculoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/VehiculoController/ModeloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/VehiculoController/ModeloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/VehiculoController/TipoUsoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/VehiculoController/TipoUsoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/VehiculoController/TipoVehiculoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/VehiculoController/TipoVehiculoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/VehiculoController/VehiculoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/controller/VehiculoController/VehiculoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Cotizacion/Cotizacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Cotizacion/Cotizacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Cotizacion/CotizacionXDetalleCotizacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Cotizacion/CotizacionXDetalleCotizacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Distritos/Distrito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Distritos/Distrito.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Distritos/Provincia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Distritos/Provincia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Personas/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Personas/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Personas/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Personas/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Personas/Permisos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Personas/Permisos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Personas/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Personas/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Personas/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Personas/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Personas/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Personas/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/SOAT/BoletaDeVenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/SOAT/BoletaDeVenta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/SOAT/Cobertura.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/SOAT/MetodoDePago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/SOAT/MetodoDePago.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/SOAT/PlanSOAT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/SOAT/PlanSOAT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/SOAT/Poliza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/SOAT/Poliza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/SOAT/PolizaXCobertura.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/SOAT/SOAT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/SOAT/SOAT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Vehiculo/Modelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Vehiculo/Modelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Vehiculo/TipoUso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Vehiculo/TipoUso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Vehiculo/TipoVehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Vehiculo/TipoVehiculo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Vehiculo/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/model/Vehiculo/Vehiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/SOATRepository/CoberturaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/PersonasRepository/TipoDocumentoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/PersonasRepository/TipoDocumentoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/SOATRepository/BoletaDeVentaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/SOATRepository/BoletaDeVentaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/SOATRepository/PlanSOATRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/SOATRepository/PlanSOATRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/VehiculoRepository/MarcaVehiculoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/VehiculoRepository/MarcaVehiculoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/VehiculoRepository/ModeloRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/VehiculoRepository/ModeloRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/VehiculoRepository/TipoUsoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/VehiculoRepository/TipoUsoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/VehiculoRepository/VehiculoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/repository/VehiculoRepository/VehiculoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/SOATService/CoberturaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/PersonasService/TipoDocumentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/PersonasService/TipoDocumentoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/SOATService/BoletaDeVentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/SOATService/BoletaDeVentaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/SOATService/PlanSOATService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/SOATService/PlanSOATService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/SOATService/SOATService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/SOATService/SOATService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/VehiculoService/MarcaVehiculoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/VehiculoService/MarcaVehiculoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/VehiculoService/ModeloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/VehiculoService/ModeloService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/VehiculoService/TipoUsoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/VehiculoService/TipoUsoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/UnionSeguros-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/UnionSeguros-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/DistritosController/DepartamentoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/DistritosController/DepartamentoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/SOATController/CoberturaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/VehiculoService/VehiculoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pucp/unionseguros/service/VehiculoService/VehiculoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/UnionSegurosApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/UnionSegurosApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/PersonasController/PersonaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/PersonasController/PersonaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/PersonasController/TipoDocumentoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/PersonasController/TipoDocumentoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/SOATController/BoletaDeVentaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/SOATController/BoletaDeVentaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/SOATController/MetodoDePagoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/SOATController/MetodoDePagoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/SOATController/PlanSOATController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/SOATController/PlanSOATController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/SOATController/PolizaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/SOATController/PolizaController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/SOATController/SOATController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/SOATController/SOATController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/VehiculoController/MarcaVehiculoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/VehiculoController/MarcaVehiculoController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/VehiculoController/ModeloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/VehiculoController/ModeloController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/VehiculoController/TipoUsoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/VehiculoController/TipoUsoController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/VehiculoController/TipoVehiculoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/VehiculoController/TipoVehiculoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/VehiculoController/VehiculoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/controller/VehiculoController/VehiculoController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Cotizacion/Cotizacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Cotizacion/Cotizacion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Cotizacion/CotizacionXDetalleCotizacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Cotizacion/CotizacionXDetalleCotizacion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Distritos/Distrito.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Distritos/Distrito.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Distritos/Provincia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Distritos/Provincia.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Personas/Administrador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Personas/Administrador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Personas/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Personas/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Personas/Permisos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Personas/Permisos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Personas/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Personas/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Personas/Roles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Personas/Roles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Personas/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Personas/Usuario.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/SOAT/BoletaDeVenta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/SOAT/BoletaDeVenta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/SOAT/Cobertura.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/SOAT/MetodoDePago.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/SOAT/MetodoDePago.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/SOAT/PlanSOAT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/SOAT/PlanSOAT.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/SOAT/Poliza.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/SOAT/Poliza.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/SOAT/PolizaXCobertura.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/SOAT/SOAT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/SOAT/SOAT.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Vehiculo/Modelo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Vehiculo/Modelo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Vehiculo/TipoUso.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Vehiculo/TipoUso.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Vehiculo/TipoVehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Vehiculo/TipoVehiculo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Vehiculo/Vehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/model/Vehiculo/Vehiculo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/SOATRepository/CoberturaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/PersonasRepository/TipoDocumentoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/PersonasRepository/TipoDocumentoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/SOATRepository/BoletaDeVentaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/SOATRepository/BoletaDeVentaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/SOATRepository/PlanSOATRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/SOATRepository/PlanSOATRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/VehiculoRepository/MarcaVehiculoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/VehiculoRepository/MarcaVehiculoRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/VehiculoRepository/ModeloRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/VehiculoRepository/ModeloRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/SOATService/CoberturaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/VehiculoRepository/TipoUsoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/VehiculoRepository/TipoUsoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/VehiculoRepository/VehiculoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/repository/VehiculoRepository/VehiculoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/PersonasService/TipoDocumentoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/PersonasService/TipoDocumentoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/SOATService/BoletaDeVentaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/SOATService/BoletaDeVentaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/SOATService/PlanSOATService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/SOATService/PlanSOATService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/SOATService/SOATService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/SOATService/SOATService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/VehiculoService/MarcaVehiculoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/VehiculoService/MarcaVehiculoService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/VehiculoService/ModeloService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/VehiculoService/ModeloService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/VehiculoService/TipoUsoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/VehiculoService/TipoUsoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.pucp.unionseguros.UnionSegurosApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.pucp.unionseguros.UnionSegurosApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/pucp/unionseguros/UnionSegurosApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/VehiculoService/VehiculoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pucp/unionseguros/service/VehiculoService/VehiculoService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,35 +151,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Cursos Universidad/Cursos 2023-1/Ingeniería de Software/demo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "daf1c4774a8ab2aa9d8e207ecff73eae",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Universidad/Cursos 2023-1/Ingeniería de Software/Repositorio de TA/UnionSeguros/Server-side/UnionSeguros&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;daf1c4774a8ab2aa9d8e207ecff73eae&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="UnionSegurosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="UnionSeguros" />
@@ -164,6 +206,8 @@
       <workItem from="1682602140047" duration="21275000" />
       <workItem from="1682635307130" duration="4897000" />
       <workItem from="1683034992123" duration="9740000" />
+      <workItem from="1683062382765" duration="7010000" />
+      <workItem from="1683077620745" duration="49568000" />
     </task>
     <servers />
   </component>
