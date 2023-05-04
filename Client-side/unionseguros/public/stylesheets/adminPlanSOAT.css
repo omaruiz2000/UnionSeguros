@@ -10,11 +10,82 @@ tr{
 }
 
 .btn-edit{
-    background-color: #FFC107;
+    border: 5px;
+    border-color: #041E42;
+    border-radius: 5px;
+    background-color: rgba(4, 30, 66, 20%);
+    color: #041E42;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    margin: 5px;
+}
+
+.btn-edit:active{
     border: none;
     border-radius: 5px;
+    background-color: #041E42;
+    color: white;
+    height: fit-content;
+    width: fit-content;
     padding: 5px;
-    color: #000;
-    font-weight: bold;
+    margin: 5px;
+}
+
+table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #041E42;
+    color: #fff;
+    font-weight:normal;
+}
+
+table{
+    margin-top: 20px;
+}
+
+#btn-nuevo{
+    border: none;
+    border-radius: 5px;
+    background-color: #041E42;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    margin: 5px;
+}
+
+#control-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#control-bar-search{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#control-bar-sort{
+    display: flex;
+    flex-direction: row;
+}
+
+#txt-buscar{
+    border: none;
+    border-bottom: 2px solid #041E42;
+    color: #041E42;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    margin: 10px;
+}
+
+select{
+    font-size: 12px;
+    margin: 15px;
 }
 

@@ -1,8 +1,26 @@
-<main id = "tabla-plan-soat">
+<main id="tabla-plan-soat">
     <h2>Plan SOAT </h2>
-    <div>
-        <input type="text" placeholder="buscar">
-        <button>Agregar</button>
+    <div id="control-bar">
+        <div id="control-bar-sort">
+            <p>Ordenar por: </p>
+            <select name="sort" id="sort">
+                <option value="id">ID Asc</option>
+                <option value="idDesc">ID Desc</option>
+                <option value="nombre">Nombre Asc</option>
+                <option value="nombreDesc">Nombre Desc</option>
+                <option value="precio">Precio Asc</option>
+                <option value="precioDesc">Precio Desc</option>
+                <option value="cobertura">Cobertura Asc</option>
+                <option value="coberturaDesc">Cobertura Desc</option>
+                <option value="activo">Activo Asc</option>
+                <option value="activoDesc">Activo Desc</option>
+            </select>
+        </div>
+        <div id="control-bar-search">
+            <img src="../public/resources/icons/Accessibility.png" alt="Buscar">
+            <input id="txt-buscar" type="text" placeholder="buscar">
+            <button id="btn-nuevo">Nuevo</button>
+        </div>
     </div>
     <table id="tableID" class="display" style="width:100%">
         <thead>
@@ -12,11 +30,11 @@
                 <th>Precio</th>
                 <th>Cobertura</th>
                 <th>Activo</th>
-                <th></th>
+                <th>Editar</th>
             </tr>
         </thead>
-        <tbody id = "table-body">
+        <tbody id="table-body">
         </tbody>
     </table>
-  
+
 </main>
