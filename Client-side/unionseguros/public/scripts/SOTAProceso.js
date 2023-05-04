@@ -492,6 +492,8 @@ function guardar() {
                 "id": localStorage.getItem("tipoDocumento")
             },
             "fechaCreacion": formattedDate,
+            "activoUsuario": true,
+            "activoPersona": true,
             "baneado": false,
             "fidRoles": {
                 "idRole": 1,
