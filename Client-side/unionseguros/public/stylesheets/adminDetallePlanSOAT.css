@@ -1,0 +1,61 @@
+.button-red{
+    border: none;
+    border-radius: 5px;
+    background-color: #C8102E;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 10px;
+  }
+  
+  .button-red:active {
+    border: 5px;
+    border-color: #C8102E;
+    border-radius: 5px;
+    background-color:  #F7FBFC;
+    color: #C8102E;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 10px;
+  }
+  
+  .button-red-whie-back{
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #C8102E;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 10px;
+  }
+  
+  
+  .button-red-transparente{
+    border: 5px;
+    border-color: #C8102E;
+    border-radius: 5px;
+    background-color: rgba(200, 16, 46, 20%);
+    color: #C8102E;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 10px;
+  }
+
+  .content-container{
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .content-cantainer-item bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .info-vehi-form h2{
+    margin-left: 20px;
+  }
