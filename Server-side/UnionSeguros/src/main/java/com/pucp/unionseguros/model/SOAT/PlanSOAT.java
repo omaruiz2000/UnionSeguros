@@ -1,3 +1,8 @@
+/*
+Nombre del archivo:    PlanSOAT
+Autor:                Sergio Dadic
+Descripcion:        Archivo model de la clase PlanSOAT
+*/
 package com.pucp.unionseguros.model.SOAT;
 
 import jakarta.persistence.*;

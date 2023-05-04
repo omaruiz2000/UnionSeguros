@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    BoletaDeVenta
+Autor:                Andrea Mejia
+Descripcion:        Archivo model de la clase BoletaDeVenta
+*/
+
 package com.pucp.unionseguros.model.SOAT;
 
 import com.pucp.unionseguros.model.Distritos.Distrito;

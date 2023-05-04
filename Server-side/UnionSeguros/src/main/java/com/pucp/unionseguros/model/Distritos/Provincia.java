@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    Provincia
+Autor:                Andrea Mejia
+Descripcion:        Archivo model de la clase Provincia
+*/
+
 package com.pucp.unionseguros.model.Distritos;
 
 import jakarta.persistence.*;

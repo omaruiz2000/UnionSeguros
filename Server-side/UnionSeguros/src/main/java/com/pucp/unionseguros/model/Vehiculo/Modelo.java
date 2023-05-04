@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    Modelo
+Autor:                Jarumy Novoa
+Descripcion:        Archivo model de la clase Modelo
+*/
+
 package com.pucp.unionseguros.model.Vehiculo;
 
 import jakarta.persistence.*;

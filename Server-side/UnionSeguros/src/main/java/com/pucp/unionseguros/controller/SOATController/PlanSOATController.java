@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    PlanSOATController
+Autor:                Tadeo Gallegos
+Descripcion:        Archivo controller de la clase Plan SOAT
+*/
+
 package com.pucp.unionseguros.controller.SOATController;
 
 import com.pucp.unionseguros.model.SOAT.PlanSOAT;
@@ -8,7 +14,6 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-//Tadeo Gallegos
 @Service
 @RestController
 @RequestMapping(path = "api/v1/planSOAT")

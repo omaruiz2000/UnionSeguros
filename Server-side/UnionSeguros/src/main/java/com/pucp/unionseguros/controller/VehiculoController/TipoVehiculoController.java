@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    TipoVehiculoController
+Autor:                Andrea Mejia
+Descripcion:        Archivo controller de la clase Tipo Vehiculo
+*/
+
 package com.pucp.unionseguros.controller.VehiculoController;
 
 import com.pucp.unionseguros.model.Vehiculo.TipoUso;

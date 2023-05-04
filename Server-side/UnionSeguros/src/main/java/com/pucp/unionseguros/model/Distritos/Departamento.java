@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    Departamento
+Autor:                Sergio Dadic
+Descripcion:        Archivo model de la clase Departamento
+*/
+
 package com.pucp.unionseguros.model.Distritos;
 
 import jakarta.persistence.*;

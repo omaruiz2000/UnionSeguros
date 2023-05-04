@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    Vehiculo
+Autor:                Sergio Dadic
+Descripcion:        Archivo model de la clase Vehiculo
+*/
+
 package com.pucp.unionseguros.model.Vehiculo;
 
 import com.pucp.unionseguros.model.Personas.Persona;

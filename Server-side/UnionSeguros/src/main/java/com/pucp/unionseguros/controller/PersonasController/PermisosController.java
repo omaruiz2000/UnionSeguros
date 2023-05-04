@@ -1,3 +1,8 @@
+/*
+Nombre del archivo:    PermisosController
+Autor:                Jarumy Novoa
+Descripcion:        Archivo controller de la clase Permisos
+*/
 package com.pucp.unionseguros.controller.PersonasController;
 
 import com.pucp.unionseguros.model.Personas.Permisos;

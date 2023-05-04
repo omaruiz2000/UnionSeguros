@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    MarcaVehiculoController
+Autor:                Tadeo Gallegos
+Descripcion:        Archivo controller de la clase Marca
+*/
+
 package com.pucp.unionseguros.controller.VehiculoController;
 
 import com.pucp.unionseguros.model.Vehiculo.MarcaVehiculo;

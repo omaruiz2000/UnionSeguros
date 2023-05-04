@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    RolesController
+Autor:                Tadeo Gallegos
+Descripcion:        Archivo controller de la clase Roles
+*/
+
 package com.pucp.unionseguros.controller.PersonasController;
 
 import com.pucp.unionseguros.model.Personas.Roles;

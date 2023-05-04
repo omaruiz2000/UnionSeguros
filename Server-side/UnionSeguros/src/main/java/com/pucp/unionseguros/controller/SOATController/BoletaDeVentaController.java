@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    BoletaDeVentaController
+Autor:                Sergio Dadic
+Descripcion:        Archivo controller de la clase Boleta de Venta
+*/
+
 package com.pucp.unionseguros.controller.SOATController;
 
 import com.pucp.unionseguros.model.SOAT.BoletaDeVenta;

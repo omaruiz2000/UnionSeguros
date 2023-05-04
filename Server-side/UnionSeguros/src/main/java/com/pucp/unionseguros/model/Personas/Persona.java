@@ -1,3 +1,8 @@
+/*
+Nombre del archivo:    Persona
+Autor:                Sergio Dadic
+Descripcion:        Archivo model de la clase Persona
+*/
 package com.pucp.unionseguros.model.Personas;
 
 import com.pucp.unionseguros.service.PersonasService.UsuarioService;
@@ -44,7 +49,7 @@ public class Persona {
     private String numeroDocumento;
 
     @Column(name = "activo")
-    private boolean activo;
+    private boolean activoPersona;
 
     @ManyToOne
     @JoinColumn(name = "fid_tipo_documento")

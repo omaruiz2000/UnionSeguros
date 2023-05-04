@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    Administrador
+Autor:                Jarumy Novoa
+Descripcion:        Archivo model de la clase Administrador
+*/
+
 package com.pucp.unionseguros.model.Personas;
 
 import jakarta.persistence.*;

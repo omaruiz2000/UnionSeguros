@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    DepartamentoController
+Autor:                Tadeo Gallegos
+Descripcion:        Archivo controller de la clase Departamento
+*/
+
 package com.pucp.unionseguros.controller.DistritosController;
 
 import com.pucp.unionseguros.model.Distritos.Departamento;
@@ -13,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Service
-//Tadeo Gallegos
+
 @RequestMapping(path = "api/v1/Departamento")
 public class DepartamentoController {
     @Autowired

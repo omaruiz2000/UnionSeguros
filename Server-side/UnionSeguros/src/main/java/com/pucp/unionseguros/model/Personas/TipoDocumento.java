@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    TipoDocumento
+Autor:                Sergio Dadic
+Descripcion:        Archivo model de la clase TipoDocumento
+*/
+
 package com.pucp.unionseguros.model.Personas;
 
 import com.pucp.unionseguros.model.SOAT.BoletaDeVenta;

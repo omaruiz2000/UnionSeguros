@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    Usuario
+Autor:                Tadeo Gallegos
+Descripcion:        Archivo model de la clase Usuario
+*/
+
 package com.pucp.unionseguros.model.Personas;
 
 import jakarta.persistence.*;
@@ -28,6 +34,6 @@ public class Usuario extends Persona{
     private LocalDate fechaCreacion;
 
     @Column(name = "activo")
-    private boolean activo;
+    private boolean activoUsuario;
 
 }

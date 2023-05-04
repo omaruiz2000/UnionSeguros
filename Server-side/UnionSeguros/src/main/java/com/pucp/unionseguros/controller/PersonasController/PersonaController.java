@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    PersonaController
+Autor:                Sergio Dadic
+Descripcion:        Archivo controller de la clase Persona
+*/
+
 package com.pucp.unionseguros.controller.PersonasController;
 
 import com.pucp.unionseguros.model.Personas.Persona;

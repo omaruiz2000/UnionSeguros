@@ -1,3 +1,8 @@
+/*
+Nombre del archivo:    Roles
+Autor:                Sergio Dadic
+Descripcion:        Archivo model de la clase Roles
+*/
 package com.pucp.unionseguros.model.Personas;
 
 import jakarta.persistence.*;

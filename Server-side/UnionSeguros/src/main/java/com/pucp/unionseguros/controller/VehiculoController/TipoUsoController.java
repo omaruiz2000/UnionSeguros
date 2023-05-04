@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    TipoUsoController
+Autor:                Sergio Dadic
+Descripcion:        Archivo controller de la clase Tipo Uso
+*/
+
 package com.pucp.unionseguros.controller.VehiculoController;
 
 import com.pucp.unionseguros.model.Vehiculo.TipoUso;

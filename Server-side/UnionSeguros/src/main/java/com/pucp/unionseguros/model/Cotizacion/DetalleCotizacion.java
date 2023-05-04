@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    DetalleCotizacion
+Autor:                Andrea Mejia
+Descripcion:        Archivo model de la clase DetalleCotizacion
+*/
+
 package com.pucp.unionseguros.model.Cotizacion;
 
 import jakarta.persistence.*;

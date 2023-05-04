@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    SOATController
+Autor:                Tadeo Gallegos
+Descripcion:        Archivo controller de la clase SOAT
+*/
+
 package com.pucp.unionseguros.controller.SOATController;
 
 import com.pucp.unionseguros.model.SOAT.SOAT;
@@ -8,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-//Sergio Dasdic
 @Service
 @RestController
 @RequestMapping(path = "api/v1/SOAT")

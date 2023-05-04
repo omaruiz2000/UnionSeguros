@@ -1,3 +1,8 @@
+/*
+Nombre del archivo:    CotizacionController
+Autor:                Sergio Dadic
+Descripcion:        Archivo controller de la clase Cotizacion
+*/
 package com.pucp.unionseguros.controller.CotizacionController;
 
 import com.pucp.unionseguros.model.Cotizacion.Cotizacion;
@@ -11,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @Service
-//Sergio Dadic
 @RequestMapping(path = "api/v1/cotizacion")
 public class CotizacionController {
 

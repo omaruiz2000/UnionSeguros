@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    Cliente
+Autor:                Sergio Dadic
+Descripcion:        Archivo model de la clase Cliente
+*/
+
 package com.pucp.unionseguros.model.Personas;
 
 import jakarta.persistence.*;

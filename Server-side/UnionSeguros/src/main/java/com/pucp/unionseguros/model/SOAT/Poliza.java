@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    Poliza
+Autor:                Tadeo Gallegos
+Descripcion:        Archivo model de la clase Poliza
+*/
+
 package com.pucp.unionseguros.model.SOAT;
 
 import com.pucp.unionseguros.model.Cotizacion.Moneda;

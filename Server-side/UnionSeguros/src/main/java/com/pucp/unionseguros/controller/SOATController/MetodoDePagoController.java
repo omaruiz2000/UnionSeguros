@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    MetodoDePagoController
+Autor:                Sergio Dadic
+Descripcion:        Archivo controller de la clase Metodo De Pago
+*/
+
 package com.pucp.unionseguros.controller.SOATController;
 
 import com.pucp.unionseguros.model.SOAT.MetodoDePago;

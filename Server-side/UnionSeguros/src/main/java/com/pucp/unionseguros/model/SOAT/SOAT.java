@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    SOAT
+Autor:                Sergio Dadic
+Descripcion:        Archivo model de la clase SOAT
+*/
+
 package com.pucp.unionseguros.model.SOAT;
 
 import com.pucp.unionseguros.model.Distritos.Distrito;

@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    MetodoDePago
+Autor:                Jarumy Novoa
+Descripcion:        Archivo model de la clase MetodoDePago
+*/
+
 package com.pucp.unionseguros.model.SOAT;
 
 import jakarta.persistence.*;

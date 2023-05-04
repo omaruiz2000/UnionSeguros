@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    TipoVehiculo
+Autor:                Tadeo Gallegos
+Descripcion:        Archivo model de la clase TipoVehiculo
+*/
+
 package com.pucp.unionseguros.model.Vehiculo;
 
 import jakarta.persistence.*;

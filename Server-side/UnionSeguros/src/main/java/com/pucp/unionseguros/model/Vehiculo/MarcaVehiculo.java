@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    MarcaVehiculo
+Autor:                Andrea Mejia
+Descripcion:        Archivo model de la clase MarcaVehiculo
+*/
+
 package com.pucp.unionseguros.model.Vehiculo;
 
 import jakarta.persistence.*;

@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    UsuarioController
+Autor:                Jarumy Novoa
+Descripcion:        Archivo controller de la clase Departamento
+*/
+
 package com.pucp.unionseguros.controller.PersonasController;
 
 import com.pucp.unionseguros.model.Personas.Usuario;

@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    ModeloController
+Autor:                Tadeo Gallegos
+Descripcion:        Archivo controller de la clase Modelo
+*/
+
 package com.pucp.unionseguros.controller.VehiculoController;
 
 import com.pucp.unionseguros.model.Vehiculo.Modelo;

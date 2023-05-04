@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    Distrito
+Autor:                Tadeo Gallegos
+Descripcion:        Archivo model de la clase Distrito
+*/
+
 package com.pucp.unionseguros.model.Distritos;
 
 import jakarta.persistence.*;

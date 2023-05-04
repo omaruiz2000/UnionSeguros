@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    Moneda
+Autor:                Jarumy Novoa
+Descripcion:        Archivo model de la clase Moneda
+*/
+
 package com.pucp.unionseguros.model.Cotizacion;
 
 import jakarta.persistence.*;

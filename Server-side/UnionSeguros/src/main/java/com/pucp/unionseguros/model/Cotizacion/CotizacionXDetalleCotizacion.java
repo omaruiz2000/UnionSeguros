@@ -1,3 +1,10 @@
+/*
+Nombre del archivo:    CotizacionXDetalleCotizacion
+Autor:                Tadeo Gallegos
+Descripcion:        Archivo model de la clase CotizacionXDetalleCotizacion
+*/
+
+
 package com.pucp.unionseguros.model.Cotizacion;
 
 import jakarta.persistence.*;

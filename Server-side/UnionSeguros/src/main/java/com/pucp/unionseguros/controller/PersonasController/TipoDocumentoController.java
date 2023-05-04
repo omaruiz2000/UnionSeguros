@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    TipoDocumentoController
+Autor:                Andrea Mejia
+Descripcion:        Archivo controller de la clase Tipo Documento
+*/
+
 package com.pucp.unionseguros.controller.PersonasController;
 
 import com.pucp.unionseguros.model.Personas.TipoDocumento;

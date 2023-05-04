@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    Cotizacion
+Autor:                Sergio Dadic
+Descripcion:        Archivo model de la clase Cotizacion
+*/
+
 package com.pucp.unionseguros.model.Cotizacion;
 
 import com.pucp.unionseguros.model.Distritos.Distrito;

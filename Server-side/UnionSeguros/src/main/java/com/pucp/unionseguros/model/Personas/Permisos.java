@@ -1,3 +1,8 @@
+/*
+Nombre del archivo:    Permisos
+Autor:                Sergio Dadic
+Descripcion:        Archivo model de la clase Permisos
+*/
 package com.pucp.unionseguros.model.Personas;
 
 import jakarta.persistence.*;

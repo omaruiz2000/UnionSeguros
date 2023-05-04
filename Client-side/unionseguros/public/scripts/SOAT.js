@@ -14,11 +14,11 @@ function toggleAnswer(answerId) {
 document.getElementById("select-documento").addEventListener("change", function () {
     const selectedValue = this.value;
     document.getElementById("txt-documento").disabled = false;
-    if (document.querySelector("#select-documento").value == "DNI") {
+    if (document.querySelector("#select-documento").value == "1") {
         document.getElementById("txt-documento").maxLength = "8";
-    } else if (document.querySelector("#select-documento").value == "CE") {
+    } else if (document.querySelector("#select-documento").value == "2") {
         document.getElementById("txt-documento").maxLength = "9";
-    } else if (document.querySelector("#select-documento").value == "RUC") {
+    } else if (document.querySelector("#select-documento").value == "3") {
         document.getElementById("txt-documento").maxLength = "11";
     }
 });

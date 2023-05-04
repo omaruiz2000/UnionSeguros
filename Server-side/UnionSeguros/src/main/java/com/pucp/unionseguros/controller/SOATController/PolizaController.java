@@ -1,3 +1,9 @@
+/*
+Nombre del archivo:    PolizaController
+Autor:                Sergio Dadic
+Descripcion:        Archivo controller de la clase Poliza
+*/
+
 package com.pucp.unionseguros.controller.SOATController;
 
 import com.pucp.unionseguros.model.SOAT.Poliza;
