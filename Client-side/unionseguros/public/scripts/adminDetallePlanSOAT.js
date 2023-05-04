@@ -1,5 +1,6 @@
-const GLOBAL_URL = 'https://apimocha.com/unionseguros';
-        
+//const GLOBAL_URL = 'https://apimocha.com/unionseguros';
+const GLOBAL_URL = 'http://localhost:8080/api/v1';
+
 window.onload = function () {
     if (localStorage.getItem('plan-id') == null) {
         document.querySelector('#titulo').innerHTML = 'Nuevo Plan SOAT';
@@ -17,10 +18,10 @@ window.onload = function () {
 
 
     document.querySelector('#btn-guardar').addEventListener('click', function () {
-        if (document.querySelector('#id').innerHTML==null){
-          const plan =  {
+        if (document.querySelector('#id').innerHTML == "") {
+            const plan = {
                 "cobertura": document.querySelector('#txt-cobertura').value,
-                "precio": document.querySelector('#txt-precio'),
+                "precio": document.querySelector('#txt-precio').value,
                 "nombrePlan": document.querySelector('#txt-nombre').value,
                 "activo": document.querySelector('#select-estado').value
             }
@@ -45,17 +46,17 @@ window.onload = function () {
                     // Handle the error
                     console.error(error);
                 });
-        }else{
-            const plan =  {
+        } else {
+            const plan = {
                 "id": document.querySelector('#id').innerHTML,
                 "cobertura": document.querySelector('#txt-cobertura').value,
-                "precio": document.querySelector('#txt-precio'),
+                "precio": document.querySelector('#txt-precio').value,
                 "nombrePlan": document.querySelector('#txt-nombre').value,
                 "activo": document.querySelector('#select-estado').value
             }
 
             fetch(GLOBAL_URL + '/planSOAT/modificar', {
-                method: 'POST',
+                method: 'PUT',
                 body: JSON.stringify(plan),
                 headers: {
                     'Content-Type': 'application/json'
