@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.pucp.unionseguros.UnionSegurosApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.245 s - in com.pucp.unionseguros.UnionSegurosApplicationTests

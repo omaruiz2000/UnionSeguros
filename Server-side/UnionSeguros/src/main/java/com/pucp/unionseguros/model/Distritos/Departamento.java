@@ -1,37 +1,34 @@
+/*
+Nombre del archivo:    Departamento
+Autor:                Sergio Dadic
+Descripcion:        Archivo model de la clase Departamento
+*/
+
 package com.pucp.unionseguros.model.Distritos;
 
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Table(name = "departamento")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class Departamento {
-    private int id_departamento;
-    private String nombre_departamento;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_departamento", nullable = false)
+    private Integer id;
 
+    @Column(name = "nombre_departamento", length = 30)
+    private String nombreDepartamento;
+
+    @Column(name = "activo")
     private boolean activo;
-    public Departamento(int id_departamento, String nombre_departamento,boolean activo) {
-        this.id_departamento = id_departamento;
-        this.nombre_departamento = nombre_departamento;
-        this.activo = activo;
-    }
 
-    public int getId_departamento() {
-        return id_departamento;
-    }
 
-    public void setId_departamento(int id_departamento) {
-        this.id_departamento = id_departamento;
-    }
-
-    public String getNombre_departamento() {
-        return nombre_departamento;
-    }
-
-    public void setNombre_departamento(String nombre_departamento) {
-        this.nombre_departamento = nombre_departamento;
-    }
-
-    public boolean isActivo() {
-        return activo;
-    }
-
-    public void setActivo(boolean activo) {
-        this.activo = activo;
-    }
 }

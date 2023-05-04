@@ -1,59 +1,42 @@
+/*
+Nombre del archivo:    Modelo
+Autor:                Jarumy Novoa
+Descripcion:        Archivo model de la clase Modelo
+*/
+
 package com.pucp.unionseguros.model.Vehiculo;
 
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Table(name = "modelo")
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@Getter
 public class Modelo {
-    private int id_modelo;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_modelo", nullable = false)
+    private Integer id;
+
+    @ManyToOne
+    @JoinColumn(name = "fid_marca_vehiculo")
+    private MarcaVehiculo fidMarcaVehiculo;
+
+    @ManyToOne
+    @JoinColumn(name = "fid_tipo_vehiculo")
+    private TipoVehiculo fidTipoVehiculo;
+
+    @Column(name = "modelo", length = 30)
     private String modelo;
 
-    private Marca_Vehiculo marca_vehiculo;
-    private Tipo_Vehiculo tipo_vehiculo;
-
+    @Column(name = "activo")
     private boolean activo;
 
-    public Modelo(int id_modelo, String modelo, Marca_Vehiculo marca_vehiculo, Tipo_Vehiculo tipo_vehiculo, boolean activo) {
-        this.id_modelo = id_modelo;
-        this.modelo = modelo;
-        this.marca_vehiculo = marca_vehiculo;
-        this.tipo_vehiculo = tipo_vehiculo;
-        this.activo = activo;
-    }
 
-    public boolean isActivo() {
-        return activo;
-    }
-
-    public void setActivo(boolean activo) {
-        this.activo = activo;
-    }
-
-    public Marca_Vehiculo getMarca_vehiculo() {
-        return marca_vehiculo;
-    }
-
-    public void setMarca_vehiculo(Marca_Vehiculo marca_vehiculo) {
-        this.marca_vehiculo = marca_vehiculo;
-    }
-
-    public Tipo_Vehiculo getTipo_vehiculo() {
-        return tipo_vehiculo;
-    }
-
-    public void setTipo_vehiculo(Tipo_Vehiculo tipo_vehiculo) {
-        this.tipo_vehiculo = tipo_vehiculo;
-    }
-
-    public int getId_modelo() {
-        return id_modelo;
-    }
-
-    public void setId_modelo(int id_modelo) {
-        this.id_modelo = id_modelo;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
 }

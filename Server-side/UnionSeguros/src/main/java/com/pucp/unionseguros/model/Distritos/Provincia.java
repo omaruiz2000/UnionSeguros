@@ -1,41 +1,37 @@
+/*
+Nombre del archivo:    Provincia
+Autor:                Andrea Mejia
+Descripcion:        Archivo model de la clase Provincia
+*/
+
 package com.pucp.unionseguros.model.Distritos;
 
-public class Provincia extends Departamento{
-    private int id_provincia;
-    private String nombre_provincia;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-    private  boolean activo;
+@Entity
+@Table(name = "provincia")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+public class Provincia {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_provincia", nullable = false)
+    private Integer id;
 
-    public Provincia(int id_departamento, String nombre_departamento, boolean activo, int id_provincia, String nombre_provincia, boolean activo1) {
-        super(id_departamento, nombre_departamento, activo);
-        this.id_provincia = id_provincia;
-        this.nombre_provincia = nombre_provincia;
-        this.activo = activo1;
-    }
+    @Column(name = "nombre_provincia", length = 30)
+    private String nombreProvincia;
 
-    public int getId_provincia() {
-        return id_provincia;
-    }
+    @Column(name = "activo")
+    private boolean activo;
 
-    public void setId_provincia(int id_provincia) {
-        this.id_provincia = id_provincia;
-    }
+    @ManyToOne
+    @JoinColumn(name = "fid_departamento")
+    private Departamento fidDepartamento;
 
-    public String getNombre_provincia() {
-        return nombre_provincia;
-    }
-
-    public void setNombre_provincia(String nombre_provincia) {
-        this.nombre_provincia = nombre_provincia;
-    }
-
-    @Override
-    public boolean isActivo() {
-        return activo;
-    }
-
-    @Override
-    public void setActivo(boolean activo) {
-        this.activo = activo;
-    }
 }

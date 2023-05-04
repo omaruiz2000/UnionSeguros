@@ -1,60 +1,37 @@
+/*
+Nombre del archivo:    Roles
+Autor:                Sergio Dadic
+Descripcion:        Archivo model de la clase Roles
+*/
 package com.pucp.unionseguros.model.Personas;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.ArrayList;
 
+@Getter
+@Setter
+@Entity
+@Table(name = "roles")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Roles {
-    private int id_rol;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_roles", nullable = false)
+    private Integer idRole;
+
+    @Column(name = "descripcion", length = 100)
     private String descripcion;
-    private String nombre_rol;
 
+    @Column(name = "activo")
     private boolean activo;
-    private ArrayList<Permisos> lista_permisos;
 
-    public Roles(int id_rol, String descripcion, String nombre_rol, boolean activo, ArrayList<Permisos> lista_permisos) {
-        this.id_rol = id_rol;
-        this.descripcion = descripcion;
-        this.nombre_rol = nombre_rol;
-        this.activo = activo;
-        this.lista_permisos = lista_permisos;
-    }
-
-    public boolean isActivo() {
-        return activo;
-    }
-
-    public void setActivo(boolean activo) {
-        this.activo = activo;
-    }
-
-    public int getId_rol() {
-        return id_rol;
-    }
-
-    public void setId_rol(int id_rol) {
-        this.id_rol = id_rol;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public String getNombre_rol() {
-        return nombre_rol;
-    }
-
-    public void setNombre_rol(String nombre_rol) {
-        this.nombre_rol = nombre_rol;
-    }
-
-    public ArrayList<Permisos> getLista_permisos() {
-        return lista_permisos;
-    }
-
-    public void setLista_permisos(ArrayList<Permisos> lista_permisos) {
-        this.lista_permisos = lista_permisos;
-    }
+    @ManyToOne
+    @JoinColumn(name = "fid_permisos")
+    private Permisos fidPermisos;
 }

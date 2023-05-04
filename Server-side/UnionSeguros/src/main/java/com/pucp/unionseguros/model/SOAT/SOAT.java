@@ -1,59 +1,51 @@
+/*
+Nombre del archivo:    SOAT
+Autor:                Sergio Dadic
+Descripcion:        Archivo model de la clase SOAT
+*/
+
 package com.pucp.unionseguros.model.SOAT;
 
 import com.pucp.unionseguros.model.Distritos.Distrito;
 import com.pucp.unionseguros.model.Personas.Cliente;
 import com.pucp.unionseguros.model.Vehiculo.Vehiculo;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Date;
+@Entity
+@Table(name = "soat")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+public class SOAT {
 
-public class SOAT extends Poliza{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_soat", nullable = false)
+    private Integer id;
 
-    private int id_soat;
-    private Date fecha_de_emision;
-    private double monto_prima;
+    @ManyToOne
+    @JoinColumn(name = "fid_plan_soat")
+    private PlanSOAT fidPlanSoat;
 
-    private  boolean activo;
+    @ManyToOne
+    @JoinColumn(name = "fid_poliza")
+    private Poliza fidPoliza;
 
+    @Column(name = "fecha_de_emision")
+    private LocalDate fechaDeEmision;
 
-    public SOAT(int id_poliza, double precio_base, Date fecha_vigencia_desde, Date fecha_vigencia_fin, Vehiculo vehiculo, Distrito distrito, Cliente cliente, Cobertura cobertura, MetodoDePago metodoDePago, boolean activo, int id_soat, Date fecha_de_emision, double monto_prima, boolean activo1) {
-        super(id_poliza, precio_base, fecha_vigencia_desde, fecha_vigencia_fin, vehiculo, distrito, cliente, cobertura, metodoDePago, activo);
-        this.id_soat = id_soat;
-        this.fecha_de_emision = fecha_de_emision;
-        this.monto_prima = monto_prima;
-        this.activo = activo1;
-    }
+    @Column(name = "monto_prima", precision = 10, scale = 2)
+    private double montoPrima;
 
-    public int getId_soat() {
-        return id_soat;
-    }
+    @Column(name = "activo")
+    private boolean activo;
 
-    public void setId_soat(int id_soat) {
-        this.id_soat = id_soat;
-    }
-
-    public Date getFecha_de_emision() {
-        return fecha_de_emision;
-    }
-
-    public void setFecha_de_emision(Date fecha_de_emision) {
-        this.fecha_de_emision = fecha_de_emision;
-    }
-
-    public double getMonto_prima() {
-        return monto_prima;
-    }
-
-    public void setMonto_prima(double monto_prima) {
-        this.monto_prima = monto_prima;
-    }
-
-    @Override
-    public boolean isActivo() {
-        return activo;
-    }
-
-    @Override
-    public void setActivo(boolean activo) {
-        this.activo = activo;
-    }
 }

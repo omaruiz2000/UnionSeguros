@@ -1,24 +1,80 @@
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Distritos\Departamento.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Cotizacion\Cotizacion.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Distritos\Distrito.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\Permisos.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\Cliente.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Vehiculo\Vehiculo.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\Administrador.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\TipoDocumento.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\SOAT\MetodoDePago.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\Roles.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Cotizacion\DetalleCotizacion.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\Usuario.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\UnionSegurosApplication.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Vehiculo\Tipo_Uso.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\SOAT\PlanSOAT.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\SOAT\Poliza.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\SOAT\SOAT.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Distritos\Provincia.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Vehiculo\Modelo.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\Persona.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\SOAT\BoletaDeVenta.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\SOAT\Cobertura.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Vehiculo\Marca_Vehiculo.java
-C:\Cursos Universidad\Cursos 2023-1\Ingeniería de Software\BACKEND UNION SEGUROS\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Vehiculo\Tipo_Vehiculo.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\SOAT\SOAT.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\PersonasRepository\RolesRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\PersonasRepository\PersonasRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\SOATController\BoletaDeVentaController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\VehiculoRepository\TipoVehiculoRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\SOATService\PlanSOATService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\VehiculoController\TipoVehiculoController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\VehiculoService\VehiculoService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\PersonasController\RolesController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\SOATRepository\MetodoDePagoRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\VehiculoController\VehiculoController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\SOAT\Poliza.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\SOATService\SOATService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Distritos\Departamento.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\PersonasController\TipoDocumentoController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Vehiculo\Modelo.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Cotizacion\Cotizacion.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\TipoDocumento.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\Usuario.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\CotizacionService\CotizacionService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\VehiculoService\TipoVehiculoService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\UnionSegurosApplication.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\PersonasService\ClienteService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\PersonasService\UsuarioService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Vehiculo\TipoVehiculo.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Cotizacion\Moneda.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\SOATController\SOATController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\SOAT\MetodoDePago.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\VehiculoService\TipoUsoService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\SOATController\PolizaController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\DistritosRepository\DepartamentoRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Vehiculo\MarcaVehiculo.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Vehiculo\TipoUso.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\PersonasService\PersonaService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Distritos\Distrito.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\SOAT\PlanSOAT.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\Cliente.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\VehiculoRepository\TipoUsoRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\Administrador.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\PersonasRepository\TipoDocumentoRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\VehiculoController\TipoUsoController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\CotizacionRepository\CotizacionRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\PersonasController\ClienteController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\Persona.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Vehiculo\Vehiculo.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\SOATController\MetodoDePagoController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\DistritosController\DepartamentoController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\PersonasService\TipoDocumentoService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\SOATService\BoletaDeVentaService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\VehiculoService\MarcaVehiculoService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\VehiculoController\MarcaVehiculoController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Distritos\Provincia.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\Roles.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\SOATService\MetodoDePagoService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\SOATController\PlanSOATController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Cotizacion\CotizacionXDetalleCotizacion.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\SOATRepository\PolizaRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\SOATRepository\SOATRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\VehiculoRepository\VehiculoRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\PersonasController\PersonaController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\PersonasController\UsuarioController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Personas\Permisos.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\DistritosRepository\DistritoRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\SOAT\BoletaDeVenta.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\SOATRepository\BoletaDeVentaRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\VehiculoController\ModeloController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\PersonasController\PermisosController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\VehiculoService\ModeloService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\PersonasService\RolesService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\SOATRepository\PlanSOATRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\PersonasRepository\ClienteRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\VehiculoRepository\MarcaVehiculoRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\PersonasRepository\PermisosRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\SOATService\PolizaService.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\VehiculoRepository\ModeloRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\DistritosRepository\ProvinciaRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\controller\CotizacionController\CotizacionController.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\repository\PersonasRepository\UsuarioRepository.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\model\Cotizacion\DetalleCotizacion.java
+E:\Decargas\UnionSeguros-main\UnionSeguros-main\Server-side\UnionSeguros\src\main\java\com\pucp\unionseguros\service\PersonasService\PermisosService.java
